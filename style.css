@@ -321,26 +321,37 @@
         width: 400px;
     }
 
-/* 
-    #song1Info {
-      
+    #previewInfo {
+        font-family: 'Changa One';
     }
-
-    #song2Info {
-        
-      }
-
-      #song3Info {
-        
-      }
-
-      #song4Info {
-        
-      }
-
-      #song5Info {
-        
-      } */
+    #previewTitle {
+        font-size: 45pt;
+        color:white;
+        position: absolute;
+        top: 470px;
+        left: 965px;
+    }
+    #previewArtist {
+        font-size: 20pt;
+        color: #6000C1;
+        position: absolute;
+        top: 550px;
+        left: 1010px;
+    }
+    #previewAlbum {
+        font-size: 20pt;
+        color: #6000C1;
+        position: absolute;
+        top: 590px;
+        left: 975px;
+    }
+    #previewDifficulty {
+        font-size: 20pt;
+        color: #6000C1;
+        position: absolute;
+        top: 630px;
+        left: 990px;
+    }
 
 
 
