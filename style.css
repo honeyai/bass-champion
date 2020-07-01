@@ -262,21 +262,51 @@
 
     .songTitle {
         font-family: 'Changa One';
-        font-size: 45pt;
+        font-size: 43pt;
         color: #6000C1;
         position: relative;
         left: 120px;
-        bottom: 65px;
+        bottom: 74px;
     }
     .songArtist {
         font-family: 'Changa One';
-        font-size: 25pt;
+        font-size: 20pt;
         color: #6000C1;
+        position: relative;
+        left: 120px;
+        bottom: 70px;
     }
-    .songDifficulty {
+    /* .songDifficulty {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        position: relative;
+        left: 400px;
+    } */
+    .unfilled {
         font-family: 'Changa One';
         font-size: 50pt;
         color: #6000C1;
+        position: relative;
+        bottom: 201px;
+        left: 463px;
+    }
+
+
+    .filled {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        color: white;
+        position: relative;
+        left: 410px;
+        bottom: 130px;
+    }
+
+    .play {
+        background: transparent;
+        border: none;
+        position: relative;
+        bottom: 140px;
+        left: 600px;
     }
 
 /* 
