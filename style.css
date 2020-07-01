@@ -8,4 +8,60 @@
     <!-- 6. DEFINE CORRECT NOTES FOR ALL SONGS  -->
     <!-- 7. TEST ALLLLL OF THE ABOVE -->
     <!-- 8. START WORKING ON VISUALS/GRAPHICS --> */
+
+
+    /* --------------------------MENU STYLING-------------------------- */
+
+    #menu {
+        background-color: black;
+        display: inline;
+    }
+
+    .menuItems {
+        font-family: 'Changa One';
+        color: #6000C1;
+        display: inline-block;
+    }
+
+    #title {
+        font-size: 130pt;
+    }
+
+    #howToPlay {
+        font-size: 65pt;
+    }
+
+    #controls {
+        font-size: 65pt;
+    }
+
+    #startGame {
+        font-size: 70pt;
+    }
+
+    /* --------------------------CONTROLS STYLING-------------------------- */
+
+    #controlScreen {
+        background-color: black;
+    }
+
+    /* --------------------------HOW TO PLAY STYLING-------------------------- */
+
+    #howToPlay {
+        background-color: black;
+    }
+
+    /* --------------------------SONG SELECT STYLING-------------------------- */
+
+    #songSelector {
+        background-color: black;
+    }
+
+
+    /* --------------------------PLAY SCREEN STYLING-------------------------- */
+
+    #playScreen {
+        background-color: black;
+    }
+
     
