@@ -413,15 +413,20 @@
               top: 298px;
               left: 721px;
               opacity: 0;
-                animation: timingCircleShrink 1s ease-in 1s 2;
+                /* animation: timingCircleShrink 1s ease-in 1s 2; */
             }
             #playCircleYellow {
               position: absolute;
               top: 301px;
               left: 900px;
               opacity: 0;
-              animation: timingCircleShrink 1s ease-in 2s 3;
+              /* animation: timingCircleShrink 1s ease-in 2s 3; */
             }
+
+        #miss {
+            opacity: 0;
+            /* animation: missed .75s ease-out 2s 2; */
+        }
 
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
@@ -455,4 +460,21 @@
         100% {
             opacity: 0;
         }
+    }
+
+    @keyframes missed {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 100;
+                transform: scale(1.0);
+            }
+            99% {
+                opacity: 100;
+                transform: scale(0.70);
+            }
+            100% {
+                opacity: 0;
+            }
     }

@@ -15,6 +15,8 @@ console.log("Working")
 
 //---------------------------------------------------SONG SELECT FUNCTIONS/OBJECTS-----------------------------------------------------
 
+let songChoice = 0;
+
 // This is an object to hold the songs players can choose from.
 let songs = {
     options : [
