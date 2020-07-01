@@ -144,8 +144,8 @@
         background-color: #030022;
         width: fit-content;
         position: absolute;
-        top: 395px;
-        left: 360px;
+        top: 260px;
+        left: 1100px;
 
     }
     #howToPlayAcc {
@@ -156,8 +156,8 @@
         background-color: #030022;
         width: fit-content;
         position: absolute;
-        top: 395px;
-        left: 360px;
+        top: 260px;
+        left: 180px;
     }
 
     #howToPlayRed {
@@ -186,24 +186,28 @@
       position: absolute;
       top: 395px;
       left: 360px;
+      opacity: 0;
         /* animation: timingCircleShrink 1s ease-in; */
     }
     #circleBlue {
         position: absolute;
         top: 395px;
         left: 538px;
+        opacity: 0;
           /* animation: timingCircleShrink 1s ease-in; */
       }
       #circleGreen {
         position: absolute;
         top: 395px;
         left: 721px;
+        opacity: 0;
           animation: timingCircleShrink 1s ease-in 1s 2;
       }
       #circleYellow {
         position: absolute;
         top: 395px;
         left: 900px;
+        opacity: 0;
         animation: timingCircleShrink 1s ease-in 2s 3;
       }
 
@@ -237,15 +241,17 @@
     /* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
     @keyframes timingCircleShrink {
         0% {
-            
+            opacity: 0;
         }
-        5% {
+        20% {
+            opacity: 100;
             transform: scale(1.0);
         }
         99% {
+            opacity: 100;
             transform: scale(0.70);
         }
         100% {
-
+            opacity: 0;
         }
     }
