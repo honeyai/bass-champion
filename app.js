@@ -15,7 +15,30 @@ console.log("Working")
 
 //---------------------------------------------------SONG SELECT FUNCTIONS/OBJECTS-----------------------------------------------------
 
-let songChoice = 0;
+let songNumber = 0;
+// let songChoice = document.getElementById('previewTrack').src;
+// console.log(songChoice);
+
+changeSongChoice = (num) => {
+if (num === 1) {
+    songNumber = 1;
+    console.log(`Song number is ${songNumber}.`)
+} else if (num === 2) {
+    songNumber = 2;
+    console.log(`Song number is ${songNumber}.`)
+} else if (num === 3) {
+    songNumber = 3;
+    console.log(`Song number is ${songNumber}.`)
+} else if (num === 4) {
+    songNumber = 4;
+    console.log(`Song number is ${songNumber}.`)
+} else if (num === 5) {
+    songNumber = 5;
+    console.log(`Song number is ${songNumber}.`)
+} else {
+    console.log("This is not working.")
+}
+}
 
 // This is an object to hold the songs players can choose from.
 let songs = {
