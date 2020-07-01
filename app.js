@@ -9,10 +9,10 @@ console.log("Working")
 let songs = {
     options : [
     {title: "Let's Groove",
-     artist: "Earth, Wind, and Fire",
-     difficulty: 3,
+    artist: "Earth, Wind, and Fire",
+    difficulty: 3,
     cover: ""},
-     {title: "Knights of Cydonia",
+    {title: "Knights of Cydonia",
     artist: "Muse",
     difficulty: 5,
     cover: ""},
@@ -35,7 +35,22 @@ let songs = {
 // Counters for player and computer accuracy and points
 let playerAccuracy = 100;
 let playerPoints = 0;
+let playerCombo = 0;
 
 let compAccuracy = 100;
 let compPoints = 0;
+
+
+// Desginating which note corresponds to which key
+let redNoteKey = "h";
+let redNoteKey2 = "a";
+let blueNoteKey = "j";
+let blueNoteKey2 = "s";
+let greenNoteKey = "k";
+let greenNoteKey2 = "d";
+let yellowNoteKey = "l";
+let yellowNoteKey2 = "f";
+let starPowerKey = " ";
+
+
 
