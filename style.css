@@ -125,7 +125,20 @@
     .playInstructions {
         font-family: 'Changa One';
         color: #6000C1;
+        font-size: 24pt;
+        display: inline-flex;
+        text-align: center;
+    }
+
+    #howToPlayImages {
+        display: inline-block;
         
+    }
+
+    #howToPlayCircles {
+        height: 100%;
+        width: 100%;
+        animation: timingCircleShrink 1s ease-in;
     }
 
     /* --------------------------SONG SELECT STYLING-------------------------- */
@@ -141,3 +154,22 @@
         background-color: black;
     }
 
+
+
+    /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
+
+    /* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
+    @keyframes timingCircleShrink {
+        0% {
+            transform: scale(0);
+        }
+        5% {
+            transform: scale(1.0);
+        }
+        99% {
+            transform: scale(0.75);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
