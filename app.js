@@ -38,11 +38,11 @@ let songs = {
     difficulty: 2,
     cover: "",
     source: "./assets/Paramore Decode [OFFICIAL VIDEO].mp3"},
-    {title: "Feels Like We Only Go Backwards",
+    {title: "Eventually",
     artist: "Tame Impala",
-    difficulty: 1,
+    difficulty: 2,
     cover: "",
-    source: "./assets/Tame Impala - Feels Like We Only Go Backwards (Official Video).mp3"}
+    source: "./assets/Tame Impala - Eventually (Official Audio).mp3"}
     ]
 }
 
