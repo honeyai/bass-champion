@@ -12,37 +12,79 @@
 
     /* --------------------------MENU STYLING-------------------------- */
 
+    /* #borderBox {
+        width: fit-content;
+        height: fit-content;
+    } */
+
     #menu {
         background-color: black;
-        display: inline;
+        display: inline-block;
     }
 
     .menuItems {
         font-family: 'Changa One';
         color: #6000C1;
-        display: inline-block;
+        text-align: center;
     }
 
     #title {
         font-size: 130pt;
+        text-shadow: #6000C1 6px 8px 8px;
+        /* text-shadow:#ffffff 1px 1px; */
+        /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
+        -webkit-text-stroke: 4px white;
+        
     }
 
     #howToPlay {
         font-size: 65pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 2px white;
     }
 
     #controls {
         font-size: 65pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 2px white;
     }
 
     #startGame {
         font-size: 70pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 3px white;
     }
 
     /* --------------------------CONTROLS STYLING-------------------------- */
 
     #controlScreen {
         background-color: black;
+    }
+
+    #controlsHeader {
+        font-family: 'Changa One';
+        color: #6000C1;
+        text-align: center;
+        font-size: 70pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 2px white;
+    }
+
+    .leftAndRight {
+        font-family: 'Changa One';
+        color: white;
+        font-size: 65pt;
+        text-shadow: white 2px 3px 6px;
+        -webkit-text-stroke: 3px #6000C1;
+    }
+
+    .backToMenu {
+        font-family: 'Changa One';
+        color: #6000C1;
+        text-align: center;
+        font-size: 70pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 2px white;
     }
 
     /* --------------------------HOW TO PLAY STYLING-------------------------- */
@@ -64,4 +106,3 @@
         background-color: black;
     }
 
-    
