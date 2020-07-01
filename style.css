@@ -130,16 +130,53 @@
         text-align: center;
     }
 
-    #howToPlayImages {
+    /* #howToPlayImages {
         display: inline-block;
         
-    }
+    } */
 
-    #howToPlayCircles {
-        height: 100%;
-        width: 100%;
-        animation: timingCircleShrink 1s ease-in;
+    #howToPlayRed {
+      position: relative;
+      left: 350px;
     }
+    #howToPlayBlue {
+        position: relative;
+        left: 370px;
+      }
+      #howToPlayGreen {
+        position: relative;
+        left: 390px;
+      }
+      #howToPlayYellow {
+        position: relative;
+        left: 410px;
+      }
+    
+
+    #circleRed {
+      position: absolute;
+      top: 435px;
+      left: 360px;
+        /* animation: timingCircleShrink 1s ease-in; */
+    }
+    #circleBlue {
+        position: absolute;
+        top: 435px;
+        left: 538px;
+          /* animation: timingCircleShrink 1s ease-in; */
+      }
+      #circleGreen {
+        position: absolute;
+        top: 435px;
+        left: 721px;
+          animation: timingCircleShrink 1s ease-in;
+      }
+      #circleYellow {
+        position: absolute;
+        top: 434px;
+        left: 900px;
+          /* animation: timingCircleShrink 1s ease-in; */
+      }
 
     /* --------------------------SONG SELECT STYLING-------------------------- */
 
@@ -167,7 +204,7 @@
             transform: scale(1.0);
         }
         99% {
-            transform: scale(0.75);
+            transform: scale(0.70);
         }
         100% {
             transform: scale(0);
