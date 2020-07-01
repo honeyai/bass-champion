@@ -9,9 +9,10 @@ console.log("Working")
 let songs = {
     options : [
     {title: "Let's Groove",
-    artist: "Earth, Wind, and Fire",
+    artist: "Earth, Wind & Fire",
     difficulty: 3,
-    cover: ""},
+    cover: "",
+    source: ""},
     {title: "Knights of Cydonia",
     artist: "Muse",
     difficulty: 5,
