@@ -24,8 +24,11 @@
 
     .menuItems {
         font-family: 'Changa One';
+        font-size: 65pt;
+        text-shadow: #6000C1 4px 5px 6px;
         color: #6000C1;
         text-align: center;
+        -webkit-text-stroke: 3px white;
     }
 
     #title {
@@ -34,20 +37,8 @@
         /* text-shadow:#ffffff 1px 1px; */
         /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
         -webkit-text-stroke: 4px white;
-        
     }
 
-    #howToPlay {
-        font-size: 65pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 2px white;
-    }
-
-    #controls {
-        font-size: 65pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 2px white;
-    }
 
     #startGame {
         font-size: 70pt;
@@ -119,6 +110,22 @@
 
     #howToPlay {
         background-color: black;
+    }
+
+    #howToPlayHeader {
+        font-family: 'Changa One';
+        color: #6000C1;
+        text-align: center;
+        font-size: 70pt;
+        text-shadow: #6000C1 4px 8px 8px;
+        -webkit-text-stroke: 2px white;
+        padding-bottom: 50px;
+    }
+
+    .playInstructions {
+        font-family: 'Changa One';
+        color: #6000C1;
+        
     }
 
     /* --------------------------SONG SELECT STYLING-------------------------- */
