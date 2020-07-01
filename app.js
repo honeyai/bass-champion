@@ -12,23 +12,27 @@ let songs = {
     artist: "Earth, Wind & Fire",
     difficulty: 3,
     cover: "",
-    source: ""},
+    source: "./assets/Earth, Wind & Fire - Let's Groove (Audio).mp3"},
     {title: "Knights of Cydonia",
     artist: "Muse",
     difficulty: 5,
-    cover: ""},
+    cover: "",
+    source: "./assets/Muse - Knights of Cydonia [HD].mp3"},
     {title: "Bat Country",
     artist: "Avenged Sevenfold",
     difficulty: 4,
-    cover: ""},
+    cover: "",
+    source: "./assets/Bat Country.mp3"},
     {title: "Decode",
     artist: "Paramore",
     difficulty: 2,
-    cover: ""},
+    cover: "",
+    source: "./assets/Paramore Decode [OFFICIAL VIDEO].mp3"},
     {title: "Feels Like We Only Go Backwards",
     artist: "Tame Impala",
     difficulty: 1,
-    cover: ""}
+    cover: "",
+    source: "./assets/Tame Impala - Feels Like We Only Go Backwards (Official Video).mp3"}
     ]
 }
 
