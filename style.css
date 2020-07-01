@@ -30,6 +30,7 @@
         color: #6000C1;
         text-align: center;
         -webkit-text-stroke: 3px white;
+        padding-bottom: 50px;
     }
 
     #title {
@@ -38,6 +39,7 @@
         /* text-shadow:#ffffff 1px 1px; */
         /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
         -webkit-text-stroke: 4px white;
+        padding-bottom: 90px;
     }
 
 
@@ -142,7 +144,9 @@
         color: white;
         border: #6000C1 solid 3px;
         background-color: #030022;
-        width: fit-content;
+        text-align: center;
+        height: 80px;
+        width: 180px;
         position: absolute;
         top: 260px;
         left: 1100px;
@@ -154,8 +158,10 @@
         color: #6000C1;
         border: #6000C1 solid 3px;
         background-color: #030022;
-        width: fit-content;
+        width: 160px;
+        height: 80px;
         position: absolute;
+        text-align: center;
         top: 260px;
         left: 180px;
     }
