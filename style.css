@@ -309,6 +309,18 @@
         left: 600px;
     }
 
+    /* #songPreviewWindow {
+        
+    } */
+
+    #previewCover {
+        position: relative;
+        top: 50px;
+        left: 140px;
+        height: 400px;
+        width: 400px;
+    }
+
 /* 
     #song1Info {
       
