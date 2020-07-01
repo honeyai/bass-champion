@@ -35,7 +35,8 @@
 
     #title {
         font-size: 130pt;
-        text-shadow: #6000C1 6px 8px 8px;
+        animation: glow 2s infinite ease-in;
+        /* text-shadow: #6000C1 8px 8px 8px; */
         /* text-shadow:#ffffff 1px 1px; */
         /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
         -webkit-text-stroke: 4px white;
@@ -229,7 +230,7 @@
 
     /* --------------------------SONG SELECT STYLING-------------------------- */
 
-    #songSelector {
+    #song-select {
         background-color: black;
     }
 
@@ -243,6 +244,19 @@
 
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
+
+    @keyframes glow {
+        0% {
+            text-shadow: #6000C1 8px 8px 8px;
+        }
+        50% {
+            text-shadow: white 8px 8px 8px;
+        }
+        100% {
+            text-shadow: #6000C1 8px 8px 8px;
+        }
+    }
+
 
     /* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
     @keyframes timingCircleShrink {
