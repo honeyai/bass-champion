@@ -10,12 +10,20 @@
     
     <div id="howToPlayHeader">HOW TO PLAY</div>
 
+    <!-- instructions and premise of the game -->
     <div class="playInstructions">
         <p id="premise">You are an up-and-coming bass player and you’ve found a Battle of the Basses! In this game, you’ll compete against another player (the computer) to see who can do a better job playing the cover song.</p>
         <p id="instructions">When you see the green circle close around each note, hit the button that plays that note on your keyboard (see Controls).  If you reach a combo of 40 notes in a row, you can turn on STAR POWER for a x2 multiplier. If your accuracy dips below 60%, the crowd will boo you off stage. So do your best!</p>
     </div>
 
-    <!-- this is a test -->
+    <!-- the boxes that display the player's points and accuracy percentage -->
+    <div id="howToPlayPtsAcc">
+        <p id="howToPlayPts">1230</p>
+        <p id="howToPlayAcc">99%</p>
+    </div>
+    
+
+    <!-- these are the note circles that stay static -->
     <div id="howToPlayImages">
         <img src="./assets/croppedred2.png" alt="" id="howToPlayRed">
         <img src="./assets/croppedblue2.png" alt="" id="howToPlayBlue">
@@ -24,15 +32,17 @@
     </div>
 
 
+    <!-- these are the timing circles that are being animated -->
     <div id="howToPlayCircles">
     <img src="./assets/startingcirclebig.png" alt="" id="circleRed">
     <img src="./assets/startingcirclebig.png" alt="" id="circleBlue">
     <img src="./assets/startingcirclebig.png" alt="" id="circleGreen">
     <img src="./assets/startingcirclebig.png" alt="" id="circleYellow">
-    <!-- <img src="./assets/endingcirclebig.png" alt=""> -->
 </div>
 
-    <a href="index.html" style="text-decoration: none;"><div class="backToMenu">BACK TO MENU</div></a>
+
+    <!-- a link back to the main menu -->
+    <a href="index.html" style="text-decoration: none;"><div class="backToMenu" id="howToPlayBack">BACK TO MENU</div></a>
 
 
 

@@ -3,6 +3,7 @@
     <!-- 1. CREATE CLASSES FOR ALL OBJECTS I WANT TO BE DISPLAYED ON EACH PAGE -->
     <!-- 2. CREATE FUNCTIONS FOR GETTING INPUT FROM PLAYER KEYBOARD -->
     <!-- 3. FIGURE OUT HOW TO TIME EACH GREEN CIRCLE POP-UP (I'M THINKING ABOUT DOING IT WITH TIMESTAMPS BASED ON WHICH SONG IS PLAYING) -->
+    <!-- 3. FIGURE OUT HOW TO CONSTANTLY BE READING PLAYER INPUT FOR TESTING AGAINST CORRECT NOTE KEYS (MOST DIFFICULT!!!) (MAYBE USE JQUERY?) -->
     <!-- 4. CREATE COUNTERS FOR ACCURACY AND POINTS FOR BOTH PLAYER AND COMPUTER -->
     <!-- 5. FIND/CREATE ALL ASSETS INC. SONG MP3S AND ICONS -->
     <!-- 6. DEFINE CORRECT NOTES FOR ALL SONGS  -->
@@ -125,7 +126,7 @@
     .playInstructions {
         font-family: 'Changa One';
         color: #6000C1;
-        font-size: 24pt;
+        font-size: 20pt;
         display: inline-flex;
         text-align: center;
     }
@@ -135,21 +136,49 @@
         
     } */
 
+    #howToPlayPts {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        color: white;
+        border: #6000C1 solid 3px;
+        background-color: #030022;
+        width: fit-content;
+        position: absolute;
+        top: 395px;
+        left: 360px;
+
+    }
+    #howToPlayAcc {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        color: #6000C1;
+        border: #6000C1 solid 3px;
+        background-color: #030022;
+        width: fit-content;
+        position: absolute;
+        top: 395px;
+        left: 360px;
+    }
+
     #howToPlayRed {
-      position: relative;
-      left: 350px;
+      position: absolute;
+      left: 355px;
+      top: 395px;
     }
     #howToPlayBlue {
-        position: relative;
-        left: 370px;
+        position: absolute;
+        left: 545px;
+        top: 398px;
       }
       #howToPlayGreen {
-        position: relative;
-        left: 390px;
+        position: absolute;
+        left: 721px;
+        top: 395px;
       }
       #howToPlayYellow {
-        position: relative;
-        left: 410px;
+        position: absolute;
+        left: 900px;
+        top: 390px;
       }
     
 
@@ -173,13 +202,19 @@
       }
       #circleYellow {
         position: absolute;
-        top: 392px;
+        top: 395px;
         left: 900px;
         animation: timingCircleShrink 1s ease-in 2s 3;
       }
 
       #howToPlayCircles {
           padding-bottom: 70px;
+      }
+
+      #howToPlayBack {
+          position: absolute;
+          top: 650px;
+          left: 420px;
       }
 
     /* --------------------------SONG SELECT STYLING-------------------------- */
