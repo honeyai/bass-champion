@@ -1,9 +1,19 @@
 console.log("Working")
 
+// <!-- PSEUDOCODE STARTS HERE FRIEND -->
+//     <!-- STEPS:  -->
+//     <!-- 1. CREATE CLASSES FOR ALL OBJECTS I WANT TO BE DISPLAYED ON EACH PAGE -->
+//     <!-- 2. CREATE FUNCTIONS FOR GETTING INPUT FROM PLAYER KEYBOARD -->
+//     <!-- 3. FIGURE OUT HOW TO TIME EACH GREEN CIRCLE POP-UP (I'M THINKING ABOUT DOING IT WITH TIMESTAMPS BASED ON WHICH SONG IS PLAYING) -->
+//     <!-- 4. CREATE COUNTERS FOR ACCURACY AND POINTS FOR BOTH PLAYER AND COMPUTER -->
+//     <!-- 5. FIND/CREATE ALL ASSETS INC. SONG MP3S AND ICONS -->
+//     <!-- 6. DEFINE CORRECT NOTES FOR ALL SONGS  -->
+//     <!-- 7. TEST ALLLLL OF THE ABOVE -->
+//     <!-- 8. START WORKING ON VISUALS/GRAPHICS -->
 
 
 
-
+//---------------------------------------------------SONG SELECT FUNCTIONS/OBJECTS-----------------------------------------------------
 
 // This is an object to hold the songs players can choose from.
 let songs = {
@@ -36,6 +46,10 @@ let songs = {
     ]
 }
 
+
+
+
+// -----------------------------------------------------------PLAY SCREEN FUNCTIONS/OBJECTS---------------------------------------------------
 
 // Counters for player and computer accuracy and points
 let playerAccuracy = 100;
