@@ -373,6 +373,55 @@
         background-color: black;
     }
 
+    #playRed {
+        position: absolute;
+        left: 355px;
+        top: 300px;
+      }
+      #playBlue {
+          position: absolute;
+          left: 545px;
+          top: 300px;
+        }
+        #playGreen {
+          position: absolute;
+          left: 721px;
+          top: 300px;
+        }
+        #playYellow {
+          position: absolute;
+          left: 900px;
+          top: 298px;
+        }
+
+        #playCircleRed {
+            position: absolute;
+            top: 298px;
+            left: 360px;
+            opacity: 0;
+              /* animation: timingCircleShrink 1s ease-in; */
+          }
+          #playCircleBlue {
+              position: absolute;
+              top: 295px;
+              left: 538px;
+              opacity: 0;
+                /* animation: timingCircleShrink 1s ease-in; */
+            }
+            #playCircleGreen {
+              position: absolute;
+              top: 298px;
+              left: 721px;
+              opacity: 0;
+                animation: timingCircleShrink 1s ease-in 1s 2;
+            }
+            #playCircleYellow {
+              position: absolute;
+              top: 301px;
+              left: 900px;
+              opacity: 0;
+              animation: timingCircleShrink 1s ease-in 2s 3;
+            }
 
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
