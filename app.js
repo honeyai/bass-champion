@@ -81,8 +81,12 @@ let playerAccuracy = 100;
 let playerPoints = 0;
 let playerCombo = 0;
 
-let compAccuracy = 100;
-let compPoints = 0;
+computerPlay = () => {
+    let accuracy = (Math.random().toFixed(2))*100
+    console.log(`Computer accuracy is ${accuracy}%.`);
+    let points = Math.ceil(accuracy * 20);
+    console.log(`Computer points is ${points}.`)
+}
 
 
 // Desginating which note corresponds to which key
@@ -97,4 +101,12 @@ let yellowNoteKey2 = "f";
 let starPowerKey = " ";
 
 
+// computerPlay = () => {
+//     let accuracy = Math.random()
+//     console.log(accuracy);
+// }
+
+computerPlay();
+computerPlay();
+computerPlay();
 
