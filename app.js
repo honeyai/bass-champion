@@ -183,6 +183,7 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
         console.log('Missed!')
+        document.getElementById('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
     } 
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
@@ -192,6 +193,7 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
         console.log('Missed!');
+        document.getElementById('miss').style.animation = "missed .98s ease-out 1"
         playerCombo = 0;
     } 
     if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
@@ -201,6 +203,7 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
         console.log('Missed!')
+        document.getElementById('miss').style.animation = "missed .99s ease-out 1"
         playerCombo = 0;
     } 
     if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
@@ -210,6 +213,7 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
         console.log('Missed!')
+        document.getElementById('miss').style.animation = "missed 1s ease-out 1"
         playerCombo = 0;
     } 
 }
