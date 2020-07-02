@@ -176,9 +176,39 @@ giveKeyCode = (event) => {
 playerPlay = () => {
     let pressedKey = giveKeyCode(event);
     console.log(pressedKey)
-
+    if (pressRed && (pressedKey === 'a' || pressedKey === 'h')) {
+        playerPoints += 20;
+        playerCombo++;
+        console.log(playerPoints);
+    } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
+        console.log('Missed!')
+        playerCombo = 0;
+    } 
+    if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
+        playerPoints += 20;
+        playerCombo++;
+        console.log(playerPoints);
+    } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
+        console.log('Missed!');
+        playerCombo = 0;
+    } 
+    if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
+        playerPoints += 20;
+        playerCombo++;
+        console.log(playerPoints);
+    } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
+        console.log('Missed!')
+        playerCombo = 0;
+    } 
+    if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
+        playerPoints += 20;
+        playerCombo++;
+        console.log(playerPoints);
+    } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
+        console.log('Missed!')
+        playerCombo = 0;
+    } 
 }
-// playerPlay();
 
 
 computerPlay = () => {
