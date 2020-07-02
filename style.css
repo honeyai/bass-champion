@@ -427,14 +427,14 @@
             top: 298px;
             left: 360px;
             opacity: 0;
-              animation: timingCircleShrink 1s ease-in;
+              animation: timingCircleShrink 1s ease-in 4s 2;
           }
           #playCircleBlue {
               position: absolute;
               top: 295px;
               left: 538px;
               opacity: 0;
-                animation: timingCircleShrink 1s ease-in;
+                animation: timingCircleShrink 1s ease-in 5s 3;
             }
             #playCircleGreen {
               position: absolute;
