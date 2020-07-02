@@ -382,6 +382,14 @@
         background-color: black;
     }
 
+    h2 {
+        font-family: 'Changa One';
+        color: #6000C1;
+        border: white;
+        font-size: 20pt;
+        text-align: center;
+    }
+
     #playRed {
         position: absolute;
         left: 355px;

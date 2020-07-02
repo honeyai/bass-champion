@@ -86,8 +86,9 @@ computerPlay = () => {
     console.log(`Computer accuracy is ${accuracy}%.`);
     let points = Math.ceil(accuracy * 20);
     console.log(`Computer points is ${points}.`)
+    document.getElementById('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
 }
-
+computerPlay();
 
 // Desginating which note corresponds to which key
 let redNoteKey = "h";
@@ -107,7 +108,5 @@ let starPowerKey = " ";
 //     console.log(accuracy);
 // }
 
-computerPlay();
-computerPlay();
-computerPlay();
+
 
