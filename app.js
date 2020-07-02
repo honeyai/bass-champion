@@ -178,6 +178,7 @@ playerPlay = () => {
     console.log(pressedKey)
     if (pressRed && (pressedKey === 'a' || pressedKey === 'h')) {
         playerPoints += 20;
+        document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
@@ -186,6 +187,7 @@ playerPlay = () => {
     } 
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
         playerPoints += 20;
+        document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
@@ -194,6 +196,7 @@ playerPlay = () => {
     } 
     if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
         playerPoints += 20;
+        document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
@@ -202,6 +205,7 @@ playerPlay = () => {
     } 
     if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
         playerPoints += 20;
+        document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
@@ -209,6 +213,7 @@ playerPlay = () => {
         playerCombo = 0;
     } 
 }
+
 
 
 computerPlay = () => {
