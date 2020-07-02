@@ -382,6 +382,15 @@
         background-color: black;
     }
 
+    #backToSongs {
+        font-family: 'Changa One';
+        font-size: 25pt;
+        color: #6000C1;
+        position: relative;
+        bottom: 15px;
+        left: 20px;
+    }
+
     h2 {
         font-family: 'Changa One';
         color: #6000C1;
