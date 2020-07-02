@@ -490,6 +490,15 @@
             left: 1050px;
         }
 
+        #getInput {
+            background-color: transparent;
+            border: transparent;
+            outline: none;
+            position: relative;
+            top: 300px;
+            left: 650px;
+        }
+
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
 

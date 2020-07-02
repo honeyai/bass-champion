@@ -168,10 +168,12 @@ yellow.addEventListener('animationend', yellowCircleEnded);
 
 
 
-// playerPlay = () => {
-//     console.log(document.getElementById('playCircleRed').style.animationPlayState)
-// }
-// playerPlay();
+playerPlay = () => {
+    onkeydown {
+        
+    }
+}
+playerPlay();
 
 
 computerPlay = () => {
