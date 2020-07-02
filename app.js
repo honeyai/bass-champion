@@ -168,13 +168,15 @@ yellow.addEventListener('animationend', yellowCircleEnded);
 
 
 giveKeyCode = (event) => {
-    let x = event.key
-    console.log(x)
+    let x = event.key;
+    return x;
 }
 
 
 playerPlay = () => {
-    document.getElementById('getInput').onkeydown = giveKeyCode();
+    let pressedKey = giveKeyCode(event);
+    console.log(pressedKey)
+
 }
 // playerPlay();
 
