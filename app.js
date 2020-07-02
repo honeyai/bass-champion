@@ -101,6 +101,7 @@ let yellowNoteKey2 = "f";
 let starPowerKey = " ";
 
 
+
 // computerPlay = () => {
 //     let accuracy = Math.random()
 //     console.log(accuracy);

@@ -437,6 +437,40 @@
             /* animation: missed .75s ease-out 2s 2; */
         }
 
+        .ptsBox {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        color: white;
+        border: #6000C1 solid 3px;
+        background-color: #030022;
+        text-align: center;
+        height: 80px;
+        width: 180px;
+        }
+
+        .accBox {
+        font-family: 'Changa One';
+        font-size: 50pt;
+        color: #6000C1;
+        border: #6000C1 solid 3px;
+        background-color: #030022;
+        text-align: center;
+        }
+
+        #playerAcc {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top:20px;
+            left: 180px;
+        }
+
+        #playerPts {
+            position: absolute;
+            top:20px;
+            left: 1050px;
+        }
+
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
 
