@@ -366,6 +366,15 @@
         height: 96vh;
     }
 
+    #playThisSong {
+        font-family: 'Changa One';
+        font-size: 20pt;
+        color: #6000C1;
+        position: absolute;
+        left: 1330px;
+        top: 730px;
+    }
+
 
     /* --------------------------PLAY SCREEN STYLING-------------------------- */
 
