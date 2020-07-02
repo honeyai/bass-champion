@@ -102,6 +102,61 @@ let yellowNoteKey2 = "f";
 let starPowerKey = " ";
 
 
+// ref: https://www.w3schools.com/jsref/event_animationend.asp
+
+redCircle = () => {
+    console.log('The red circle is moving.')
+}
+redCircleEnded = () => {
+    console.log('There is no red circle.')
+}
+blueCircle = () => {
+    console.log('The blue circle is moving.')
+}
+blueCircleEnded = () => {
+    console.log('There is no blue circle.')
+}
+greenCircle = () => {
+    console.log('The green circle is moving.')
+}
+greenCircleEnded = () => {
+    console.log('There is no green circle.')
+}
+yellowCircle = () => {
+    console.log('The yellow circle is moving.')
+}
+yellowCircleEnded = () => {
+    console.log('There is no yellow circle.')
+}
+
+
+
+let red = document.getElementById('playCircleRed');
+red.addEventListener('animationstart', redCircle);
+red.addEventListener('animationiteration', redCircle);
+red.addEventListener('animationend', redCircleEnded);
+
+let blue = document.getElementById('playCircleBlue');
+blue.addEventListener('animationstart', blueCircle);
+blue.addEventListener('animationiteration', blueCircle);
+blue.addEventListener('animationend', blueCircleEnded);
+
+let green = document.getElementById('playCircleGreen');
+green.addEventListener('animationstart', greenCircle);
+green.addEventListener('animationiteration', greenCircle);
+green.addEventListener('animationend', greenCircleEnded);
+
+let yellow = document.getElementById('playCircleYellow');
+yellow.addEventListener('animationstart', yellowCircle);
+yellow.addEventListener('animationiteration', yellowCircle);
+yellow.addEventListener('animationend', yellowCircleEnded);
+
+
+
+// playerPlay = () => {
+//     console.log(document.getElementById('playCircleRed').style.animationPlayState)
+// }
+// playerPlay();
 
 // computerPlay = () => {
 //     let accuracy = Math.random()

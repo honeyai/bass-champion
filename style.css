@@ -427,28 +427,28 @@
             top: 298px;
             left: 360px;
             opacity: 0;
-              /* animation: timingCircleShrink 1s ease-in; */
+              animation: timingCircleShrink 1s ease-in;
           }
           #playCircleBlue {
               position: absolute;
               top: 295px;
               left: 538px;
               opacity: 0;
-                /* animation: timingCircleShrink 1s ease-in; */
+                animation: timingCircleShrink 1s ease-in;
             }
             #playCircleGreen {
               position: absolute;
               top: 298px;
               left: 721px;
               opacity: 0;
-                /* animation: timingCircleShrink 1s ease-in 1s 2; */
+                animation: timingCircleShrink 1s ease-in 1s 2;
             }
             #playCircleYellow {
               position: absolute;
               top: 301px;
               left: 900px;
               opacity: 0;
-              /* animation: timingCircleShrink 1s ease-in 2s 3; */
+              animation: timingCircleShrink 1s ease-in 2s 3;
             }
 
         #miss {
