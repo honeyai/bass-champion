@@ -102,35 +102,50 @@ let yellowNoteKey2 = "f";
 let starPowerKey = " ";
 
 
-// ref: https://www.w3schools.com/jsref/event_animationend.asp
+// ref for event listeners: https://www.w3schools.com/jsref/event_animationend.asp
 
+// These are the variables we'll use to test if the player pressed the note at the right time.
+let pressRed = false;
+let pressBlue = false;
+let pressGreen = false;
+let pressYellow = false;
+
+
+// These change the variables above based on the animation state of the timing circles.
 redCircle = () => {
     console.log('The red circle is moving.')
+    pressRed = true;
 }
 redCircleEnded = () => {
     console.log('There is no red circle.')
+    pressRed = false;
 }
 blueCircle = () => {
     console.log('The blue circle is moving.')
+    pressBlue = true;
 }
 blueCircleEnded = () => {
     console.log('There is no blue circle.')
+    pressBlue = false;
 }
 greenCircle = () => {
     console.log('The green circle is moving.')
+    pressGreen = true;
 }
 greenCircleEnded = () => {
     console.log('There is no green circle.')
+    pressGreen = false;
 }
 yellowCircle = () => {
     console.log('The yellow circle is moving.')
+    pressYellow = true;
 }
 yellowCircleEnded = () => {
     console.log('There is no yellow circle.')
+    pressYellow = false;
 }
 
-
-
+// These event listeners tell whether or not the timing circle is being shown at a given time or not.
 let red = document.getElementById('playCircleRed');
 red.addEventListener('animationstart', redCircle);
 red.addEventListener('animationiteration', redCircle);
@@ -158,10 +173,11 @@ yellow.addEventListener('animationend', yellowCircleEnded);
 // }
 // playerPlay();
 
-// computerPlay = () => {
-//     let accuracy = Math.random()
-//     console.log(accuracy);
-// }
+
+computerPlay = () => {
+    let accuracy = Math.random()
+    console.log(accuracy);
+}
 
 
 
