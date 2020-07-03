@@ -427,21 +427,21 @@
             top: 298px;
             left: 360px;
             opacity: 0;
-              animation: timingCircleShrink .76s ease-in 4.9s 15;
+            animation: timingCircleShrink .73s ease-in 11.10s 40
           }
           #playCircleBlue {
               position: absolute;
               top: 295px;
               left: 538px;
               opacity: 0;
-                animation: timingCircleShrink 2.28s ease-in 5s infinite;
+                /* animation: timingCircleShrink .9s ease-in 5s infinite; */
             }
             #playCircleGreen {
               position: absolute;
               top: 298px;
               left: 721px;
               opacity: 0;
-                /* animation: timingCircleShrink 1s ease-in 1s 2; */
+              animation: timingCircleShrink .18s ease-in 14.6s 86
             }
             #playCircleYellow {
               position: absolute;
