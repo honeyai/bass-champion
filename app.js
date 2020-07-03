@@ -185,12 +185,7 @@ playerPlay = () => {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
-    // } else if ((pressRed && (pressedKey === 'a' || pressedKey === 'h')) && ((pressBlue && pressedKey !== 's' && pressedKey !== 'j') || (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) || (pressYellow && (pressedKey === 'f' || pressedKey === 'l')))) {
-    //     playerPoints += 40;
-    //     document.getElementById('playerPts').innerHTML = playerPoints;
-    //     playerCombo += 2;
-    //     console.log(playerPoints);
-    // }
+    }
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
@@ -229,6 +224,4 @@ computerPlay = () => {
     let accuracy = Math.random()
     console.log(accuracy);
 }
-
-
 
