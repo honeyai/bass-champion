@@ -30,9 +30,11 @@ YELLOW:
         <a href="song-select.html" style="text-decoration: none;"><p class="backToSongs">BACK</p></a>
     </div>
 
+    <!-- USE THIS FORMAT TO CHANGE THE ANIMATION OF THE TIMING CIRCLE -->
+    <!-- document.getElementById('playCircleRed').style.animation = 'timingCircleShrink 1s ease-in 10s 40' -->
     <div id="chooseSong">
         <p id="reconfirm">SELECT SONG:</p>
-        <button id="yesGroove" class="confirm" onclick="document.getElementById('playingSong').src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3'; document.getElementById('chooseSong').style.display = 'none'; document.getElementById('playCircleRed').style.animation = 'timingCircleShrink 1s ease-in 10s 40'; ">LET'S GROOVE</button> 
+        <button id="yesGroove" class="confirm" onclick="document.getElementById('playingSong').src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3'; document.getElementById('chooseSong').style.display = 'none'; document.getElementById('getInput').focus(); document.getElementById('playCircleRed').style.animation = 'timingCircleShrink 1s ease-in 16'; ">LET'S GROOVE</button> 
 
         <button id="yesKnights" class="confirm" onclick="document.getElementById('playingSong').src = './assets/Muse - Knights of Cydonia [HD].mp3'; document.getElementById('chooseSong').style.display = 'none'">KNIGHTS OF CYDONIA</button>
 
@@ -66,7 +68,7 @@ YELLOW:
     </div>
 
     <div>
-        <p id="playerAcc" class="accBox">100%</p>
+        <p id="playerAcc" class="accBox">COM: 0</p>
     </div>
 
     <img src="./assets/miss.png" alt="" id="miss">
