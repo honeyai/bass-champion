@@ -18,56 +18,56 @@ console.log("Working")
 let songNumber = 0;
 // let songChoice = document.getElementById('previewTrack').src;
 // console.log(songChoice);
-
+let url = ''
 changeSongChoice = (num) => {
 if (num === 1) {
     songNumber = 1;
     console.log(`Song number is ${songNumber}.`);
-    return songNumber;
+    url = "./assets/Earth, Wind & Fire - Let's Groove (Audio).mp3"
+    document.getElementById('playingSong').src = url;
+    // return songNumber;
     // document.getElementById("playingSong").src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3';
 } else if (num === 2) {
     songNumber = 2;
     console.log(`Song number is ${songNumber}.`);
-    return songNumber;
+    url = "./assets/Muse - Knights of Cydonia [HD].mp3"
+    document.getElementById('playingSong').src = url;
+    // return songNumber;
     // document.getElementById("playingSong").src = './assets/Muse - Knights of Cydonia [HD].mp3';
 } else if (num === 3) {
     songNumber = 3;
     console.log(`Song number is ${songNumber}.`);
-    return songNumber;
+    url = "./assets/Bat Country.mp3"
+    document.getElementById('playingSong').src = url;
+    // return songNumber;
     // document.getElementById("playingSong").src = './assets/Bat Country.mp3';
 } else if (num === 4) {
     songNumber = 4;
     console.log(`Song number is ${songNumber}.`);
-    return songNumber;
+    url = "./assets/Paramore Decode [OFFICIAL VIDEO].mp3"
+    document.getElementById('playingSong').src = url;
+    // return songNumber;
     // document.getElementById("playingSong").src = './assets/Paramore Decode [OFFICIAL VIDEO].mp3';
 } else if (num === 5) {
     songNumber = 5;
     console.log(`Song number is ${songNumber}.`);
-    return songNumber;
+    url = "./assets/Tame Impala - Eventually (Official Audio).mp3"
+    document.getElementById('playingSong').src = url;
+    // return songNumber;
     // document.getElementById("playingSong").src = './assets/Tame Impala - Eventually (Official Audio).mp3';
 } else {
     console.log("This is not working.")
 }
+// console.log(url);
 // console.log(songNumber);
 }
 
 // this will probably be deleted
-playTheSong = (num) => {
-    changeSongChoice(num);
-    if (num === 1) {
-        document.getElementById('playingSong').src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3';
-    } else if (num === 2) {
-        document.getElementById("playingSong").src = './assets/Muse - Knights of Cydonia [HD].mp3'
-    } else if (num === 3) {
-        document.getElementById("playingSong").src = './assets/Bat Country.mp3'
-    } else if (num === 4) {
-        document.getElementById("playingSong").src = './assets/Paramore Decode [OFFICIAL VIDEO].mp3'
-    } else if (num === 5) {
-        document.getElementById("playingSong").src = './assets/Tame Impala - Eventually (Official Audio).mp3'
-    } else {
-        console.log("This didn't work.")
-    }
-}
+// setSong = () => {
+//    let item = document.getElementById('playingSong').innerHTML
+//    let song = document.getElementById('previewTrack').innerHTML
+//    item.src = song;
+// }
 
 
 // This is an object to hold the songs players can choose from.
