@@ -52,15 +52,7 @@ if (num === 1) {
 // console.log(songNumber);
 }
 
-// this will probably be deleted
-// setSong = () => {
-//    let item = document.getElementById('playingSong').innerHTML
-//    let song = document.getElementById('previewTrack').innerHTML
-//    item.src = song;
-// }
-
-
-// This is an object to hold the songs players can choose from.
+// This is an object to hold the songs players can choose from. I don't think I need it anymore but you never know.
 let songs = {
     options : [
     {title: "Let's Groove",
@@ -166,22 +158,22 @@ yellowCircleEnded = () => {
 }
 
 // These event listeners tell whether or not the timing circle is being shown at a given time or not.
-let red = document.getElementById('playCircleRed');
+let red = document.getElementsByClassName('playCircleRed');
 red.addEventListener('animationstart', redCircle);
 red.addEventListener('animationiteration', redCircle);
 red.addEventListener('animationend', redCircleEnded);
 
-let blue = document.getElementById('playCircleBlue');
+let blue = document.getElementsByClassName('playCircleBlue');
 blue.addEventListener('animationstart', blueCircle);
 blue.addEventListener('animationiteration', blueCircle);
 blue.addEventListener('animationend', blueCircleEnded);
 
-let green = document.getElementById('playCircleGreen');
+let green = document.getElementsByClassName('playCircleGreen');
 green.addEventListener('animationstart', greenCircle);
 green.addEventListener('animationiteration', greenCircle);
 green.addEventListener('animationend', greenCircleEnded);
 
-let yellow = document.getElementById('playCircleYellow');
+let yellow = document.getElementsByClassName('playCircleYellow');
 yellow.addEventListener('animationstart', yellowCircle);
 yellow.addEventListener('animationiteration', yellowCircle);
 yellow.addEventListener('animationend', yellowCircleEnded);

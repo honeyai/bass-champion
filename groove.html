@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Groove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="letsGroove">
+    
+    <audio src="./assets/Earth, Wind & Fire - Let's Groove (Audio).mp3" autoplay></audio>
+
+    <div>
+        <a href="song-select.html" style="text-decoration: none;"><p class="backToSongs">BACK</p></a>
+    </div>
+
+    <div>
+     <h2 class="beatThis"> SCORE TO BEAT: 1020 </h2>
+    </div>
+
+    <div class="playImages">
+        <img src="./assets/croppedred2.png" alt="" class="playRed">
+        <img src="./assets/croppedblue2.png" alt="" class="playBlue">
+        <img src="./assets/croppedgreen2.png" alt="" class="playGreen">
+        <img src="./assets/croppedyellow.png" alt="" class="playYellow">
+    </div>
+
+    <div class="playCircles">
+        <img src="./assets/startingcirclebig.png" alt="" id="grooveCircleRed" class="playCircleRed">
+        <img src="./assets/startingcirclebig.png" alt="" id="grooveCircleBlue" class="playCircleBlue">
+        <img src="./assets/startingcirclebig.png" alt="" id="grooveCircleGreen" class="playCircleGreen">
+        <img src="./assets/startingcirclebig.png" alt="" id="grooveCircleYellow" class="playCircleYellow">
+    </div>
+
+    <div>
+        <p class="playerPts ptsBox">0</p>
+    </div>
+
+    <div>
+        <p class="playerAcc accBox">100%</p>
+    </div>
+
+    <img src="./assets/miss.png" alt="" class="miss">
+
+
+    <div>
+        <input type="text" autofocus class="getInput" spellcheck="false" onkeydown="playerPlay()">
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
