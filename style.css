@@ -398,6 +398,19 @@
         bottom: 15px;
         left: 20px;
     }
+    #reconfirm {
+        font-family: 'Changa One';
+        color: white;
+        font-size: 20pt;
+        text-align: center;
+    }
+    .confirm {
+        font-family: 'Changa One';
+        color: white;
+        font-size: 12pt;
+        position: relative;
+        left: 425px;
+    }
 
     h2 {
         font-family: 'Changa One';
@@ -456,34 +469,7 @@
               opacity: 0;
               /* animation: timingCircleShrink 1s ease-in 2s 3; */
             }
-
-          #grooveCircleRed {
-            animation: timingCircleShrink .73s ease-in 11.10s 40;
-          }
-          #grooveCircleBlue {
-            animation: timingCircleShrink .9s ease-in 5s infinite;
-          }
-         #grooveCircleGreen {
-            animation: timingCircleShrink .18s ease-in 14.6s 86
-          }
-         #grooveCircleYellow {
-            animation: timingCircleShrink 1s ease-in 2s 3;
-         }
-
-         #knightsCircleRed {
-            animation: timingCircleShrink .73s ease-in 11.10s 40;
-          }
-          #knightsCircleBlue {
-            animation: timingCircleShrink .9s ease-in 5s infinite;
-          }
-         #knightsCircleGreen {
-            animation: timingCircleShrink .18s ease-in 14.6s 86
-          }
-         #knightsCircleYellow {
-            animation: timingCircleShrink 1s ease-in 2s 3;
-         }
-
-        .miss {
+        #miss {
             opacity: 0;
             position: absolute;
             top: 500px;
@@ -511,7 +497,7 @@
         text-align: center;
         }
 
-        .playerAcc {
+        #playerAcc {
             width: fit-content;
             height: fit-content;
             position: absolute;
@@ -519,13 +505,13 @@
             left: 180px;
         }
 
-        .playerPts {
+        #playerPts {
             position: absolute;
             top:20px;
             left: 1050px;
         }
 
-        .getInput {
+        #getInput {
             background-color: transparent;
             border: transparent;
             outline: none;
