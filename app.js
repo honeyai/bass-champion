@@ -98,7 +98,7 @@ computerPlay = () => {
     console.log(`Computer accuracy is ${accuracy}%.`);
     let points = Math.ceil(accuracy * 20);
     console.log(`Computer points is ${points}.`)
-    document.getElementsByClassName('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
+    document.getElementById('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
 }
 computerPlay();
 
