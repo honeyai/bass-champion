@@ -286,3 +286,11 @@ computerPlay = () => {
     console.log(accuracy);
 }
 
+
+
+changeAnimation = () => {
+    document.getElementById('playCircleRed').style.animation = 'timingCircleShrink .73s ease-in 40';
+    document.getElementById('playCircleBlue').style.animation = 'timingCircleShrink 2s ease-in 40';
+    document.getElementById('playCircleGreen').style.animation = 'timingCircleShrink 1s ease-in 40';
+    document.getElementById('playCircleYellow').style.animation = 'timingCircleShrink .25s ease-in 10';
+}
