@@ -23,36 +23,26 @@ changeSongChoice = (num) => {
 if (num === 1) {
     songNumber = 1;
     console.log(`Song number is ${songNumber}.`);
-    url = "./assets/Earth, Wind & Fire - Let's Groove (Audio).mp3"
-    document.getElementById('playingSong').src = url;
     // return songNumber;
     // document.getElementById("playingSong").src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3';
 } else if (num === 2) {
     songNumber = 2;
     console.log(`Song number is ${songNumber}.`);
-    url = "./assets/Muse - Knights of Cydonia [HD].mp3"
-    document.getElementById('playingSong').src = url;
     // return songNumber;
     // document.getElementById("playingSong").src = './assets/Muse - Knights of Cydonia [HD].mp3';
 } else if (num === 3) {
     songNumber = 3;
     console.log(`Song number is ${songNumber}.`);
-    url = "./assets/Bat Country.mp3"
-    document.getElementById('playingSong').src = url;
     // return songNumber;
     // document.getElementById("playingSong").src = './assets/Bat Country.mp3';
 } else if (num === 4) {
     songNumber = 4;
     console.log(`Song number is ${songNumber}.`);
-    url = "./assets/Paramore Decode [OFFICIAL VIDEO].mp3"
-    document.getElementById('playingSong').src = url;
     // return songNumber;
     // document.getElementById("playingSong").src = './assets/Paramore Decode [OFFICIAL VIDEO].mp3';
 } else if (num === 5) {
     songNumber = 5;
     console.log(`Song number is ${songNumber}.`);
-    url = "./assets/Tame Impala - Eventually (Official Audio).mp3"
-    document.getElementById('playingSong').src = url;
     // return songNumber;
     // document.getElementById("playingSong").src = './assets/Tame Impala - Eventually (Official Audio).mp3';
 } else {
