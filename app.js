@@ -98,7 +98,7 @@ computerPlay = () => {
     console.log(`Computer accuracy is ${accuracy}%.`);
     let points = Math.ceil(accuracy * 20);
     console.log(`Computer points is ${points}.`)
-    document.getElementById('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
+    document.getElementsByClassName('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
 }
 computerPlay();
 
@@ -158,25 +158,66 @@ yellowCircleEnded = () => {
 }
 
 // These event listeners tell whether or not the timing circle is being shown at a given time or not.
-let red = document.getElementsByClassName('playCircleRed');
+let red = document.getElementById('playCircleRed');
 red.addEventListener('animationstart', redCircle);
 red.addEventListener('animationiteration', redCircle);
 red.addEventListener('animationend', redCircleEnded);
 
-let blue = document.getElementsByClassName('playCircleBlue');
+// let red2 = document.getElementById('knightsCircleRed');
+// red2.addEventListener('animationstart', redCircle);
+// red2.addEventListener('animationiteration', redCircle);
+// red2.addEventListener('animationend', redCircleEnded);
+
+// let red1 = document.getElementById('grooveCircleRed');
+// red1.addEventListener('animationstart', redCircle);
+// red1.addEventListener('animationiteration', redCircle);
+// red1.addEventListener('animationend', redCircleEnded);
+
+let blue = document.getElementById('playCircleBlue');
 blue.addEventListener('animationstart', blueCircle);
 blue.addEventListener('animationiteration', blueCircle);
 blue.addEventListener('animationend', blueCircleEnded);
 
-let green = document.getElementsByClassName('playCircleGreen');
+// let blue1 = document.getElementsByClassName('grooveCircleBlue');
+// blue1.addEventListener('animationstart', blueCircle);
+// blue1.addEventListener('animationiteration', blueCircle);
+// blue1.addEventListener('animationend', blueCircleEnded);
+
+// let blue2 = document.getElementsByClassName('knightsCircleBlue');
+// blue2.addEventListener('animationstart', blueCircle);
+// blue2.addEventListener('animationiteration', blueCircle);
+// blue2.addEventListener('animationend', blueCircleEnded);
+
+let green = document.getElementById('playCircleGreen');
 green.addEventListener('animationstart', greenCircle);
 green.addEventListener('animationiteration', greenCircle);
 green.addEventListener('animationend', greenCircleEnded);
 
-let yellow = document.getElementsByClassName('playCircleYellow');
+// let green1 = document.getElementsByClassName('grooveCircleGreen');
+// green1.addEventListener('animationstart', greenCircle);
+// green1.addEventListener('animationiteration', greenCircle);
+// green1.addEventListener('animationend', greenCircleEnded);
+
+// let green2 = document.getElementsByClassName('knightsCircleGreen');
+// green2.addEventListener('animationstart', greenCircle);
+// green2.addEventListener('animationiteration', greenCircle);
+// green2.addEventListener('animationend', greenCircleEnded);
+
+let yellow = document.getElementById('playCircleYellow');
 yellow.addEventListener('animationstart', yellowCircle);
 yellow.addEventListener('animationiteration', yellowCircle);
 yellow.addEventListener('animationend', yellowCircleEnded);
+
+// let yellow1 = document.getElementsByClassName('grooveCircleYellow');
+// yellow1.addEventListener('animationstart', yellowCircle);
+// yellow1.addEventListener('animationiteration', yellowCircle);
+// yellow1.addEventListener('animationend', yellowCircleEnded);
+
+// let yellow2 = document.getElementsByClassName('knightsCircleYellow');
+// yellow2.addEventListener('animationstart', yellowCircle);
+// yellow2.addEventListener('animationiteration', yellowCircle);
+// yellow2.addEventListener('animationend', yellowCircleEnded);
+
 
 
 giveKeyCode = (event) => {
@@ -190,42 +231,42 @@ playerPlay = () => {
     console.log(pressedKey)
     if (pressRed && (pressedKey === 'a' || pressedKey === 'h')) {
         playerPoints += 20;
-        document.getElementById('playerPts').innerHTML = playerPoints;
+        document.getElementsByClassName('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
         console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed .97s ease-out 1"
+        document.getElementsByClassName('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
     }
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
         playerPoints += 20;
-        document.getElementById('playerPts').innerHTML = playerPoints;
+        document.getElementsByClassName('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
         console.log('Missed!');
-        document.getElementById('miss').style.animation = "missed .98s ease-out 1"
+        document.getElementsByClassName('miss').style.animation = "missed .98s ease-out 1"
         playerCombo = 0;
     } 
     if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
         playerPoints += 20;
-        document.getElementById('playerPts').innerHTML = playerPoints;
+        document.getElementsByClassName('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
         console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed .99s ease-out 1"
+        document.getElementsByClassName('miss').style.animation = "missed .99s ease-out 1"
         playerCombo = 0;
     } 
     if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
         playerPoints += 20;
-        document.getElementById('playerPts').innerHTML = playerPoints;
+        document.getElementsByClassName('playerPts').innerHTML = playerPoints;
         playerCombo++;
         console.log(playerPoints);
     } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
         console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed 1s ease-out 1"
+        document.getElementsByClassName('miss').style.animation = "missed 1s ease-out 1"
         playerCombo = 0;
     } 
 }
