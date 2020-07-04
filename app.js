@@ -22,23 +22,53 @@ let songNumber = 0;
 changeSongChoice = (num) => {
 if (num === 1) {
     songNumber = 1;
-    console.log(`Song number is ${songNumber}.`)
+    console.log(`Song number is ${songNumber}.`);
+    return songNumber;
+    // document.getElementById("playingSong").src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3';
 } else if (num === 2) {
     songNumber = 2;
-    console.log(`Song number is ${songNumber}.`)
+    console.log(`Song number is ${songNumber}.`);
+    return songNumber;
+    // document.getElementById("playingSong").src = './assets/Muse - Knights of Cydonia [HD].mp3';
 } else if (num === 3) {
     songNumber = 3;
-    console.log(`Song number is ${songNumber}.`)
+    console.log(`Song number is ${songNumber}.`);
+    return songNumber;
+    // document.getElementById("playingSong").src = './assets/Bat Country.mp3';
 } else if (num === 4) {
     songNumber = 4;
-    console.log(`Song number is ${songNumber}.`)
+    console.log(`Song number is ${songNumber}.`);
+    return songNumber;
+    // document.getElementById("playingSong").src = './assets/Paramore Decode [OFFICIAL VIDEO].mp3';
 } else if (num === 5) {
     songNumber = 5;
-    console.log(`Song number is ${songNumber}.`)
+    console.log(`Song number is ${songNumber}.`);
+    return songNumber;
+    // document.getElementById("playingSong").src = './assets/Tame Impala - Eventually (Official Audio).mp3';
 } else {
     console.log("This is not working.")
 }
+// console.log(songNumber);
 }
+
+// this will probably be deleted
+playTheSong = (num) => {
+    changeSongChoice(num);
+    if (num === 1) {
+        document.getElementById('playingSong').src = './assets/Earth, Wind & Fire - Let\'s Groove (Audio).mp3';
+    } else if (num === 2) {
+        document.getElementById("playingSong").src = './assets/Muse - Knights of Cydonia [HD].mp3'
+    } else if (num === 3) {
+        document.getElementById("playingSong").src = './assets/Bat Country.mp3'
+    } else if (num === 4) {
+        document.getElementById("playingSong").src = './assets/Paramore Decode [OFFICIAL VIDEO].mp3'
+    } else if (num === 5) {
+        document.getElementById("playingSong").src = './assets/Tame Impala - Eventually (Official Audio).mp3'
+    } else {
+        console.log("This didn't work.")
+    }
+}
+
 
 // This is an object to hold the songs players can choose from.
 let songs = {

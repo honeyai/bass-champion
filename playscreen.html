@@ -6,7 +6,7 @@
     <title>BASS CHAMPION</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="playTheSong()">
 <!-- 
 EVENTUALLY TIMING: 
 RED: animation: timingCircleShrink .76s ease-in 4.9s 15
@@ -24,28 +24,28 @@ YELLOW:
  -->
 
 
-    <audio src="assets/Paramore Decode [OFFICIAL VIDEO].mp3" autoplay></audio>
+    <audio id="playingSong" src='' autoplay></audio>
 
     <div>
-        <a href="song-select.html" style="text-decoration: none;"><p id="backToSongs">BACK</p></a>
+        <a href="song-select.html" style="text-decoration: none;"><p class="backToSongs">BACK</p></a>
     </div>
 
     <div>
-     <h2 id="beatThis"> SCORE TO BEAT: 1020 </h2>
+     <h2 class="beatThis"> SCORE TO BEAT: 1020 </h2>
     </div>
 
     <div id="playImages">
-        <img src="./assets/croppedred2.png" alt="" id="playRed">
-        <img src="./assets/croppedblue2.png" alt="" id="playBlue">
-        <img src="./assets/croppedgreen2.png" alt="" id="playGreen">
-        <img src="./assets/croppedyellow.png" alt="" id="playYellow">
+        <img src="./assets/croppedred2.png" alt="" class="playRed">
+        <img src="./assets/croppedblue2.png" alt="" class="playBlue">
+        <img src="./assets/croppedgreen2.png" alt="" class="playGreen">
+        <img src="./assets/croppedyellow.png" alt="" class="playYellow">
     </div>
 
     <div id="playCircles">
-        <img src="./assets/startingcirclebig.png" alt="" id="playCircleRed">
-        <img src="./assets/startingcirclebig.png" alt="" id="playCircleBlue">
-        <img src="./assets/startingcirclebig.png" alt="" id="playCircleGreen">
-        <img src="./assets/startingcirclebig.png" alt="" id="playCircleYellow">
+        <img src="./assets/startingcirclebig.png" alt="" class="playCircleRed">
+        <img src="./assets/startingcirclebig.png" alt="" class="playCircleBlue">
+        <img src="./assets/startingcirclebig.png" alt="" class="playCircleGreen">
+        <img src="./assets/startingcirclebig.png" alt="" class="playCircleYellow">
     </div>
 
     <div>
@@ -56,11 +56,11 @@ YELLOW:
         <p id="playerAcc" class ="accBox">100%</p>
     </div>
 
-    <img src="./assets/miss.png" alt="" id="miss">
+    <img src="./assets/miss.png" alt="" class="miss">
 
 
     <div>
-        <input type="text" autofocus id="getInput" spellcheck="false" onkeydown="playerPlay()">
+        <input type="text" autofocus class="getInput" spellcheck="false" onkeydown="playerPlay()">
     </div>
 
 

@@ -383,8 +383,11 @@
     #playScreen {
         background-color: black;
     }
+    #letsGroove {
+        background-color: black;
+    }
 
-    #backToSongs {
+    .backToSongs {
         font-family: 'Changa One';
         font-size: 25pt;
         color: #6000C1;
@@ -401,49 +404,49 @@
         text-align: center;
     }
 
-    #playRed {
+    .playRed {
         position: absolute;
         left: 355px;
         top: 300px;
       }
-      #playBlue {
+      .playBlue {
           position: absolute;
           left: 545px;
           top: 300px;
         }
-        #playGreen {
+        .playGreen {
           position: absolute;
           left: 721px;
           top: 300px;
         }
-        #playYellow {
+        .playYellow {
           position: absolute;
           left: 900px;
           top: 298px;
         }
 
-        #playCircleRed {
+        .playCircleRed {
             position: absolute;
             top: 298px;
             left: 360px;
             opacity: 0;
-            animation: timingCircleShrink .73s ease-in 11.10s 40
+            animation: timingCircleShrink .73s ease-in 11.10s 40;
           }
-          #playCircleBlue {
+          .playCircleBlue {
               position: absolute;
               top: 295px;
               left: 538px;
               opacity: 0;
                 /* animation: timingCircleShrink .9s ease-in 5s infinite; */
             }
-            #playCircleGreen {
+            .playCircleGreen {
               position: absolute;
               top: 298px;
               left: 721px;
               opacity: 0;
-              animation: timingCircleShrink .18s ease-in 14.6s 86
+              /* animation: timingCircleShrink .18s ease-in 14.6s 86 */
             }
-            #playCircleYellow {
+            .playCircleYellow {
               position: absolute;
               top: 301px;
               left: 900px;
@@ -451,7 +454,7 @@
               /* animation: timingCircleShrink 1s ease-in 2s 3; */
             }
 
-        #miss {
+        .miss {
             opacity: 0;
             position: absolute;
             top: 500px;
@@ -493,7 +496,7 @@
             left: 1050px;
         }
 
-        #getInput {
+        .getInput {
             background-color: transparent;
             border: transparent;
             outline: none;
@@ -519,6 +522,7 @@
 
 
     /* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
+    /* This SHOULD let me put multiple animations on the same circle HOPEFULLY */
     @keyframes timingCircleShrink {
         0% {
             opacity: 0;
@@ -535,6 +539,70 @@
             opacity: 0;
         }
     }
+    /* @keyframes timingCircleShrink2 {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 100;
+            transform: scale(1.0);
+        }
+        99% {
+            opacity: 100;
+            transform: scale(0.70);
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes timingCircleShrink3 {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 100;
+            transform: scale(1.0);
+        }
+        99% {
+            opacity: 100;
+            transform: scale(0.70);
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes timingCircleShrink4 {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 100;
+            transform: scale(1.0);
+        }
+        99% {
+            opacity: 100;
+            transform: scale(0.70);
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes timingCircleShrink5 {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 100;
+            transform: scale(1.0);
+        }
+        99% {
+            opacity: 100;
+            transform: scale(0.70);
+        }
+        100% {
+            opacity: 0;
+        }
+    } */
 
     @keyframes missed {
             0% {
