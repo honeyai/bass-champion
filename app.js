@@ -299,7 +299,7 @@ computerPlay = () => {
 }
 
 
-
+// i dont think i need this anymore but you never know
 changeAnimation = () => {
     document.getElementById('playCircleRed').style.animation = 'timingCircleShrink .73s ease-in 40';
     document.getElementById('playCircleBlue').style.animation = 'timingCircleShrink 2s ease-in 40';

@@ -10,631 +10,620 @@
     <!-- 7. TEST ALLLLL OF THE ABOVE -->
     <!-- 8. START WORKING ON VISUALS/GRAPHICS --> */
 
+/* --------------------------MENU STYLING-------------------------- */
 
-    /* --------------------------MENU STYLING-------------------------- */
-
-    /* #borderBox {
+/* #borderBox {
         width: fit-content;
         height: fit-content;
     } */
 
-    #menu {
-        background-color: black;
-        display: inline-block;
-    }
+#menu {
+  background-color: black;
+  display: inline-block;
+}
 
-    .menuItems {
-        font-family: 'Changa One';
-        font-size: 65pt;
-        text-shadow: #6000C1 4px 5px 6px;
-        color: #6000C1;
-        text-align: center;
-        -webkit-text-stroke: 3px white;
-        padding-bottom: 50px;
-    }
+.menuItems {
+  font-family: "Changa One";
+  font-size: 65pt;
+  text-shadow: #6000c1 4px 5px 6px;
+  color: #6000c1;
+  text-align: center;
+  -webkit-text-stroke: 3px white;
+  padding-bottom: 50px;
+}
 
-    #title {
-        font-size: 130pt;
-        animation: glow 2s infinite ease-in;
-        /* text-shadow: #6000C1 8px 8px 8px; */
-        /* text-shadow:#ffffff 1px 1px; */
-        /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
-        -webkit-text-stroke: 4px white;
-        padding-bottom: 90px;
-    }
+#title {
+  font-size: 130pt;
+  animation: glow 2s infinite ease-in;
+  /* text-shadow: #6000C1 8px 8px 8px; */
+  /* text-shadow:#ffffff 1px 1px; */
+  /* Source for webkit text border: https://stackoverflow.com/questions/2570972/css-font-border */
+  -webkit-text-stroke: 4px white;
+  padding-bottom: 90px;
+}
 
+#startGame {
+  font-size: 70pt;
+  text-shadow: #6000c1 4px 8px 8px;
+  -webkit-text-stroke: 3px white;
+}
 
-    #startGame {
-        font-size: 70pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 3px white;
-    }
+/* --------------------------CONTROLS STYLING-------------------------- */
 
-    /* --------------------------CONTROLS STYLING-------------------------- */
+#controlScreen {
+  background-color: black;
+}
 
-    #controlScreen {
-        background-color: black;
-    }
-
-    /* .headings {
+/* .headings {
         padding-left: 10px;
     } */
 
-    #controlsHeader {
-        font-family: 'Changa One';
-        color: #6000C1;
-        text-align: center;
-        font-size: 70pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 2px white;
-        padding-bottom: 50px;
-    }
+#controlsHeader {
+  font-family: "Changa One";
+  color: #6000c1;
+  text-align: center;
+  font-size: 70pt;
+  text-shadow: #6000c1 4px 8px 8px;
+  -webkit-text-stroke: 2px white;
+  padding-bottom: 50px;
+}
 
-    .leftAndRight {
-        font-family: 'Changa One';
-        color: white;
-        font-size: 65pt;
-        text-shadow: white 2px 3px 6px;
-        -webkit-text-stroke: 3px #6000C1;
-        display: inline-flex;
-    }
+.leftAndRight {
+  font-family: "Changa One";
+  color: white;
+  font-size: 65pt;
+  text-shadow: white 2px 3px 6px;
+  -webkit-text-stroke: 3px #6000c1;
+  display: inline-flex;
+}
 
-    #leftHeader {
-        padding-left: 10px;
-    }
+#leftHeader {
+  padding-left: 10px;
+}
 
-    #rightHeader {
-        padding-left: 320px;
-    }
+#rightHeader {
+  padding-left: 320px;
+}
 
-    .controlPics {
-        display: inline-flex;
-        padding-bottom: 50px;
-    }
+.controlPics {
+  display: inline-flex;
+  padding-bottom: 50px;
+}
 
-    #leftHanded {
-        padding-left: 50px;
-    }
+#leftHanded {
+  padding-left: 50px;
+}
 
-    #rightHanded {
-        padding-left: 530px;
-    }
+#rightHanded {
+  padding-left: 530px;
+}
 
+.backToMenu {
+  font-family: "Changa One";
+  color: #6000c1;
+  text-align: center;
+  font-size: 70pt;
+  text-shadow: #6000c1 4px 8px 8px;
+  -webkit-text-stroke: 2px white;
+}
 
-    .backToMenu {
-        font-family: 'Changa One';
-        color: #6000C1;
-        text-align: center;
-        font-size: 70pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 2px white;
-    }
+/* --------------------------HOW TO PLAY STYLING-------------------------- */
 
-    /* --------------------------HOW TO PLAY STYLING-------------------------- */
+#howToPlay {
+  background-color: black;
+}
 
-    #howToPlay {
-        background-color: black;
-    }
+#howToPlayHeader {
+  font-family: "Changa One";
+  color: #6000c1;
+  text-align: center;
+  font-size: 70pt;
+  text-shadow: #6000c1 4px 8px 8px;
+  -webkit-text-stroke: 2px white;
+  padding-bottom: 10px;
+}
 
-    #howToPlayHeader {
-        font-family: 'Changa One';
-        color: #6000C1;
-        text-align: center;
-        font-size: 70pt;
-        text-shadow: #6000C1 4px 8px 8px;
-        -webkit-text-stroke: 2px white;
-        padding-bottom: 10px;
-    }
+.playInstructions {
+  font-family: "Changa One";
+  color: #6000c1;
+  font-size: 20pt;
+  display: inline-flex;
+  text-align: center;
+}
 
-    .playInstructions {
-        font-family: 'Changa One';
-        color: #6000C1;
-        font-size: 20pt;
-        display: inline-flex;
-        text-align: center;
-    }
-
-    /* #howToPlayImages {
+/* #howToPlayImages {
         display: inline-block;
         
     } */
 
-    #howToPlayPts {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: white;
-        border: #6000C1 solid 3px;
-        background-color: #030022;
-        text-align: center;
-        height: 80px;
-        width: 180px;
-        position: absolute;
-        top: 260px;
-        left: 1100px;
+#howToPlayPts {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: white;
+  border: #6000c1 solid 3px;
+  background-color: #030022;
+  text-align: center;
+  height: 80px;
+  width: 180px;
+  position: absolute;
+  top: 260px;
+  left: 1100px;
+}
+#howToPlayAcc {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: #6000c1;
+  border: #6000c1 solid 3px;
+  background-color: #030022;
+  width: 160px;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  top: 260px;
+  left: 180px;
+}
 
-    }
-    #howToPlayAcc {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: #6000C1;
-        border: #6000C1 solid 3px;
-        background-color: #030022;
-        width: 160px;
-        height: 80px;
-        position: absolute;
-        text-align: center;
-        top: 260px;
-        left: 180px;
-    }
+#howToPlayRed {
+  position: absolute;
+  left: 355px;
+  top: 395px;
+}
+#howToPlayBlue {
+  position: absolute;
+  left: 545px;
+  top: 398px;
+}
+#howToPlayGreen {
+  position: absolute;
+  left: 721px;
+  top: 395px;
+}
+#howToPlayYellow {
+  position: absolute;
+  left: 900px;
+  top: 390px;
+}
 
-    #howToPlayRed {
-      position: absolute;
-      left: 355px;
-      top: 395px;
-    }
-    #howToPlayBlue {
-        position: absolute;
-        left: 545px;
-        top: 398px;
-      }
-      #howToPlayGreen {
-        position: absolute;
-        left: 721px;
-        top: 395px;
-      }
-      #howToPlayYellow {
-        position: absolute;
-        left: 900px;
-        top: 390px;
-      }
-    
+#circleRed {
+  position: absolute;
+  top: 395px;
+  left: 360px;
+  opacity: 0;
+  /* animation: timingCircleShrink 1s ease-in; */
+}
+#circleBlue {
+  position: absolute;
+  top: 395px;
+  left: 538px;
+  opacity: 0;
+  /* animation: timingCircleShrink 1s ease-in; */
+}
+#circleGreen {
+  position: absolute;
+  top: 395px;
+  left: 721px;
+  opacity: 0;
+  animation: timingCircleShrink 1s ease-in 1s 2;
+}
+#circleYellow {
+  position: absolute;
+  top: 395px;
+  left: 900px;
+  opacity: 0;
+  animation: timingCircleShrink 1s ease-in 2s 3;
+}
 
-    #circleRed {
-      position: absolute;
-      top: 395px;
-      left: 360px;
-      opacity: 0;
-        /* animation: timingCircleShrink 1s ease-in; */
-    }
-    #circleBlue {
-        position: absolute;
-        top: 395px;
-        left: 538px;
-        opacity: 0;
-          /* animation: timingCircleShrink 1s ease-in; */
-      }
-      #circleGreen {
-        position: absolute;
-        top: 395px;
-        left: 721px;
-        opacity: 0;
-          animation: timingCircleShrink 1s ease-in 1s 2;
-      }
-      #circleYellow {
-        position: absolute;
-        top: 395px;
-        left: 900px;
-        opacity: 0;
-        animation: timingCircleShrink 1s ease-in 2s 3;
-      }
+#howToPlayCircles {
+  padding-bottom: 70px;
+}
 
-      #howToPlayCircles {
-          padding-bottom: 70px;
-      }
+#howToPlayBack {
+  position: absolute;
+  top: 650px;
+  left: 420px;
+}
 
-      #howToPlayBack {
-          position: absolute;
-          top: 650px;
-          left: 420px;
-      }
+/* --------------------------SONG SELECT STYLING-------------------------- */
 
-    /* --------------------------SONG SELECT STYLING-------------------------- */
+#song-select {
+  background-color: black;
+}
 
-    #song-select {
-        background-color: black;
-    }
+#windows {
+  display: flex;
+  justify-content: space-between;
+}
 
-    #windows {
-        display: flex;
-        justify-content: space-between;
-    }
+#songList {
+  border: #6000c1 solid 2px;
+  box-shadow: #6000c1 0px 3px 6px;
+  width: 48vw;
+  height: 96vh;
+}
 
-    #songList {
-        border: #6000C1 solid 2px;
-        box-shadow: #6000C1 0px 3px 6px;
-        width: 48vw;
-        height: 96vh;
-    }
+.songInfoBoxes {
+  border: #6000c1 solid 2px;
+  box-shadow: #6000c1 0px 3px 6px;
+  color: white;
+  height: 15.5vh;
+}
+.albumCovers {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
 
-    .songInfoBoxes {
-     border: #6000C1 solid 2px;  
-      box-shadow: #6000C1 0px 3px 6px;
-      color: white;
-      height: 15.5vh;
-    }
-    .albumCovers {
-        width: 80px;
-        height: 80px;
-        position: relative;
-        top: 10px;
-        left: 10px;
-    }
-
-    .songTitle {
-        font-family: 'Changa One';
-        font-size: 43pt;
-        color: #6000C1;
-        position: relative;
-        left: 120px;
-        bottom: 74px;
-    }
-    .songArtist {
-        font-family: 'Changa One';
-        font-size: 20pt;
-        color: #6000C1;
-        position: relative;
-        left: 120px;
-        bottom: 70px;
-    }
-    /* .songDifficulty {
+.songTitle {
+  font-family: "Changa One";
+  font-size: 43pt;
+  color: #6000c1;
+  position: relative;
+  left: 120px;
+  bottom: 74px;
+}
+.songArtist {
+  font-family: "Changa One";
+  font-size: 20pt;
+  color: #6000c1;
+  position: relative;
+  left: 120px;
+  bottom: 70px;
+}
+/* .songDifficulty {
         font-family: 'Changa One';
         font-size: 50pt;
         position: relative;
         left: 400px;
     } */
-    .unfilled {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: #6000C1;
-        position: relative;
-        bottom: 201px;
-        left: 463px;
-    }
+.unfilled {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: #6000c1;
+  position: relative;
+  bottom: 201px;
+  left: 463px;
+}
 
+.filled {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: white;
+  position: relative;
+  left: 410px;
+  bottom: 130px;
+}
 
-    .filled {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: white;
-        position: relative;
-        left: 410px;
-        bottom: 130px;
-    }
+.play {
+  background: transparent;
+  border: none;
+  position: relative;
+  bottom: 140px;
+  left: 600px;
+}
 
-    .play {
-        background: transparent;
-        border: none;
-        position: relative;
-        bottom: 140px;
-        left: 600px;
-    }
-
-    /* #songPreviewWindow {
+/* #songPreviewWindow {
         
     } */
 
-    #previewCover {
-        position: relative;
-        top: 50px;
-        left: 140px;
-        height: 400px;
-        width: 400px;
-    }
+#previewCover {
+  position: relative;
+  top: 50px;
+  left: 140px;
+  height: 400px;
+  width: 400px;
+}
 
-    #previewInfo {
-        font-family: 'Changa One';
-    }
-    #previewTitle {
-        font-size: 45pt;
-        color:white;
-        position: absolute;
-        top: 470px;
-        left: 965px;
-    }
-    #previewArtist {
-        font-size: 20pt;
-        color: #6000C1;
-        position: absolute;
-        top: 550px;
-        left: 1010px;
-    }
-    #previewAlbum {
-        font-size: 20pt;
-        color: #6000C1;
-        position: absolute;
-        top: 590px;
-        left: 975px;
-    }
-    #previewDifficulty {
-        font-size: 20pt;
-        color: #6000C1;
-        position: absolute;
-        top: 630px;
-        left: 990px;
-    }
+#previewInfo {
+  font-family: "Changa One";
+}
+#previewTitle {
+  font-size: 45pt;
+  color: white;
+  position: absolute;
+  top: 470px;
+  left: 965px;
+}
+#previewArtist {
+  font-size: 20pt;
+  color: #6000c1;
+  position: absolute;
+  top: 550px;
+  left: 1010px;
+}
+#previewAlbum {
+  font-size: 20pt;
+  color: #6000c1;
+  position: absolute;
+  top: 590px;
+  left: 975px;
+}
+#previewDifficulty {
+  font-size: 20pt;
+  color: #6000c1;
+  position: absolute;
+  top: 630px;
+  left: 990px;
+}
 
-    button {
-        outline: none;
-        background: transparent;
-        border: none;
-    }
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+}
 
+#songPreviewWindow {
+  border: #6000c1 solid 4px;
+  box-shadow: #6000c1 0px 3px 6px;
+  width: 48vw;
+  height: 96vh;
+}
 
+#playThisSong {
+  font-family: "Changa One";
+  font-size: 20pt;
+  color: #6000c1;
+  position: absolute;
+  left: 1330px;
+  top: 730px;
+}
 
-    #songPreviewWindow {
-        border: #6000C1 solid 4px;
-        box-shadow: #6000C1 0px 3px 6px;
-        width: 48vw;
-        height: 96vh;
-    }
+/* --------------------------PLAY SCREENS STYLING-------------------------- */
 
-    #playThisSong {
-        font-family: 'Changa One';
-        font-size: 20pt;
-        color: #6000C1;
-        position: absolute;
-        left: 1330px;
-        top: 730px;
-    }
+#playScreen {
+  background-color: black;
+}
+#letsGroove {
+  background-color: black;
+}
+#knightsOfCydonia {
+  background-color: black;
+}
 
+.backToSongs {
+  font-family: "Changa One";
+  font-size: 25pt;
+  color: #6000c1;
+  position: relative;
+  bottom: 15px;
+  left: 20px;
+}
+#reconfirm {
+  font-family: "Changa One";
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+}
+.confirm {
+  font-family: "Changa One";
+  color: white;
+  font-size: 12pt;
+  position: relative;
+  left: 425px;
+}
 
-    /* --------------------------PLAY SCREENS STYLING-------------------------- */
+h2 {
+  font-family: "Changa One";
+  color: #6000c1;
+  border: white;
+  font-size: 20pt;
+  text-align: center;
+}
 
-    #playScreen {
-        background-color: black;
-    }
-    #letsGroove {
-        background-color: black;
-    }
-    #knightsOfCydonia {
-        background-color: black;
-    }
+.playRed {
+  position: absolute;
+  left: 355px;
+  top: 300px;
+}
+.playBlue {
+  position: absolute;
+  left: 545px;
+  top: 300px;
+}
+.playGreen {
+  position: absolute;
+  left: 721px;
+  top: 300px;
+}
+.playYellow {
+  position: absolute;
+  left: 900px;
+  top: 298px;
+}
 
-    .backToSongs {
-        font-family: 'Changa One';
-        font-size: 25pt;
-        color: #6000C1;
-        position: relative;
-        bottom: 15px;
-        left: 20px;
-    }
-    #reconfirm {
-        font-family: 'Changa One';
-        color: white;
-        font-size: 20pt;
-        text-align: center;
-    }
-    .confirm {
-        font-family: 'Changa One';
-        color: white;
-        font-size: 12pt;
-        position: relative;
-        left: 425px;
-    }
+#playCircleRed {
+  position: absolute;
+  top: 298px;
+  left: 360px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+}
+#playCircleBlue {
+  position: absolute;
+  top: 295px;
+  left: 538px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink .9s ease-in 5s infinite; */
+}
+#playCircleGreen {
+  position: absolute;
+  top: 298px;
+  left: 721px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink .18s ease-in 14.6s 86 */
+}
+#playCircleYellow {
+  position: absolute;
+  top: 301px;
+  left: 900px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink 1s ease-in 2s 3; */
+}
+#playCircleRed2 {
+  position: absolute;
+  top: 298px;
+  left: 360px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+}
+#playCircleBlue2 {
+  position: absolute;
+  top: 295px;
+  left: 538px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink .9s ease-in 5s infinite; */
+}
+#playCircleGreen2 {
+  position: absolute;
+  top: 298px;
+  left: 721px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink .18s ease-in 14.6s 86 */
+}
+#playCircleYellow2 {
+  position: absolute;
+  top: 301px;
+  left: 900px;
+  opacity: 0;
+  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
+  /* animation: timingCircleShrink 1s ease-in 2s 3; */
+}
+#miss {
+  opacity: 0;
+  position: absolute;
+  top: 500px;
+  left: 555px;
+  /* animation: missed .75s ease-out 2s 2; */
+}
 
-    h2 {
-        font-family: 'Changa One';
-        color: #6000C1;
-        border: white;
-        font-size: 20pt;
-        text-align: center;
-    }
+.ptsBox {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: white;
+  border: #6000c1 solid 3px;
+  background-color: #030022;
+  text-align: center;
+  height: 80px;
+  width: 180px;
+}
 
-    .playRed {
-        position: absolute;
-        left: 355px;
-        top: 300px;
-      }
-      .playBlue {
-          position: absolute;
-          left: 545px;
-          top: 300px;
-        }
-        .playGreen {
-          position: absolute;
-          left: 721px;
-          top: 300px;
-        }
-        .playYellow {
-          position: absolute;
-          left: 900px;
-          top: 298px;
-        }
+.accBox {
+  font-family: "Changa One";
+  font-size: 50pt;
+  color: #6000c1;
+  border: #6000c1 solid 3px;
+  background-color: #030022;
+  text-align: center;
+}
 
-        #playCircleRed {
-            position: absolute;
-            top: 298px;
-            left: 360px;
-            opacity: 0;
-            /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-          }
-          #playCircleBlue {
-              position: absolute;
-              top: 295px;
-              left: 538px;
-              opacity: 0;
-              /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-                /* animation: timingCircleShrink .9s ease-in 5s infinite; */
-            }
-            #playCircleGreen {
-              position: absolute;
-              top: 298px;
-              left: 721px;
-              opacity: 0;
-              /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-              /* animation: timingCircleShrink .18s ease-in 14.6s 86 */
-            }
-            #playCircleYellow {
-              position: absolute;
-              top: 301px;
-              left: 900px;
-              opacity: 0;
-              /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-              /* animation: timingCircleShrink 1s ease-in 2s 3; */
-            }
-            #playCircleRed2 {
-                position: absolute;
-                top: 298px;
-                left: 360px;
-                opacity: 0;
-                /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-              }
-              #playCircleBlue2 {
-                  position: absolute;
-                  top: 295px;
-                  left: 538px;
-                  opacity: 0;
-                  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-                    /* animation: timingCircleShrink .9s ease-in 5s infinite; */
-                }
-                #playCircleGreen2 {
-                  position: absolute;
-                  top: 298px;
-                  left: 721px;
-                  opacity: 0;
-                  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-                  /* animation: timingCircleShrink .18s ease-in 14.6s 86 */
-                }
-                #playCircleYellow2 {
-                  position: absolute;
-                  top: 301px;
-                  left: 900px;
-                  opacity: 0;
-                  /* animation: timingCircleShrink .73s ease-in 11.10s 40; */
-                  /* animation: timingCircleShrink 1s ease-in 2s 3; */
-                }    
-        #miss {
-            opacity: 0;
-            position: absolute;
-            top: 500px;
-            left: 555px;
-            /* animation: missed .75s ease-out 2s 2; */
-        }
+#playerAcc {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 20px;
+  left: 180px;
+}
 
-        .ptsBox {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: white;
-        border: #6000C1 solid 3px;
-        background-color: #030022;
-        text-align: center;
-        height: 80px;
-        width: 180px;
-        }
+#playerPts {
+  position: absolute;
+  top: 20px;
+  left: 1050px;
+}
 
-        .accBox {
-        font-family: 'Changa One';
-        font-size: 50pt;
-        color: #6000C1;
-        border: #6000C1 solid 3px;
-        background-color: #030022;
-        text-align: center;
-        }
+#getInput {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  position: relative;
+  top: 300px;
+  left: 650px;
+}
 
-        #playerAcc {
-            width: fit-content;
-            height: fit-content;
-            position: absolute;
-            top:20px;
-            left: 180px;
-        }
+#winModal {
+  background-color: black;
+  border: white solid 2px;
+  box-shadow: #6000c1 4px 4px 6px;
+  height: 250px;
+  width: 400px;
+  align-items: center;
+  position: absolute;
+  left: 500px;
+  display: none;
+}
+#winModalText {
+  color: white;
+  font-family: "Changa One";
+  font-size: 20pt;
+  text-align: center;
+}
+#wonBackToSongs {
+  font-family: "Changa One";
+  font-size: 25pt;
+  color: #6000c1;
+}
 
-        #playerPts {
-            position: absolute;
-            top:20px;
-            left: 1050px;
-        }
+#loseModal {
+  background-color: black;
+  border: white solid 2px;
+  box-shadow: #6000c1 4px 4px 6px;
+  height: 250px;
+  width: 400px;
+  align-items: center;
+  position: absolute;
+  left: 500px;
+  display: none;
+}
+#loseModalText {
+  color: white;
+  font-family: "Changa One";
+  font-size: 20pt;
+  text-align: center;
+}
+#loseBackToSongs {
+  font-family: "Changa One";
+  font-size: 25pt;
+  color: #6000c1;
+}
 
-        #getInput {
-            background-color: transparent;
-            border: transparent;
-            outline: none;
-            position: relative;
-            top: 300px;
-            left: 650px;
-        }
+/* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
 
-        #winModal {
-            background-color: black;
-            border: white solid 2px;
-            box-shadow: #6000C1 4px 4px 6px;
-            height: 250px;
-            width: 400px;
-            align-items: center;
-            position: absolute;
-            left: 500px;
-            display: none;
-        }
-        #winModalText {
-            color: white;
-            font-family: 'Changa One';
-            font-size: 20pt;
-            text-align: center;
-        }
-        #wonBackToSongs {
-            font-family: 'Changa One';
-            font-size: 25pt;
-            color: #6000C1;
-        }
+@keyframes glow {
+  0% {
+    text-shadow: #6000c1 8px 8px 8px;
+  }
+  50% {
+    text-shadow: white 8px 8px 8px;
+  }
+  100% {
+    text-shadow: #6000c1 8px 8px 8px;
+  }
+}
 
-        #loseModal {
-            background-color: black;
-            border: white solid 2px;
-            box-shadow: #6000C1 4px 4px 6px;
-            height: 250px;
-            width: 400px;
-            align-items: center;
-            position: absolute;
-            left: 500px;
-            display: none;
-        }
-        #loseModalText {
-            color: white;
-            font-family: 'Changa One';
-            font-size: 20pt;
-            text-align: center;
-        }
-        #loseBackToSongs {
-            font-family: 'Changa One';
-            font-size: 25pt;
-            color: #6000C1;
-        }
-
-
-    /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
-
-    @keyframes glow {
-        0% {
-            text-shadow: #6000C1 8px 8px 8px;
-        }
-        50% {
-            text-shadow: white 8px 8px 8px;
-        }
-        100% {
-            text-shadow: #6000C1 8px 8px 8px;
-        }
-    }
-
-
-    /* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
-    /* This SHOULD let me put multiple animations on the same circle HOPEFULLY */
-    @keyframes timingCircleShrink {
-        0% {
-            opacity: 0;
-        }
-        20% {
-            opacity: 100;
-            transform: scale(1.0);
-        }
-        99% {
-            opacity: 100;
-            transform: scale(0.70);
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    /* @keyframes timingCircleShrink2 {
+/* ref for transform scale: https://stackoverflow.com/questions/17767759/css3-scale-animation-keyframes/34226236 */
+/* This SHOULD let me put multiple animations on the same circle HOPEFULLY */
+@keyframes timingCircleShrink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 100;
+    transform: scale(1);
+  }
+  99% {
+    opacity: 100;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* @keyframes timingCircleShrink2 {
         0% {
             opacity: 0;
         }
@@ -699,19 +688,19 @@
         }
     } */
 
-    @keyframes missed {
-            0% {
-                opacity: 0;
-            }
-            20% {
-                opacity: 100;
-                transform: scale(1.0);
-            }
-            99% {
-                opacity: 100;
-                transform: scale(0.70);
-            }
-            100% {
-                opacity: 0;
-            }
-    }
+@keyframes missed {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 100;
+    transform: scale(1);
+  }
+  99% {
+    opacity: 100;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 0;
+  }
+}
