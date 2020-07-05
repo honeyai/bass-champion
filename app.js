@@ -128,7 +128,15 @@ redCircle = () => {
     console.log('The red circle is moving.')
     pressRed = true;
 }
+redCircle2 = () => {
+    console.log('The second red circle is moving.')
+    pressRed = true;
+}
 redCircleEnded = () => {
+    console.log('There is no red circle.')
+    pressRed = false;
+}
+redCircle2Ended = () => {
     console.log('There is no red circle.')
     pressRed = false;
 }
@@ -136,7 +144,15 @@ blueCircle = () => {
     console.log('The blue circle is moving.')
     pressBlue = true;
 }
+blueCircle2 = () => {
+    console.log('The second blue circle is moving.')
+    pressBlue = true;
+}
 blueCircleEnded = () => {
+    console.log('There is no blue circle.')
+    pressBlue = false;
+}
+blueCircle2Ended = () => {
     console.log('There is no blue circle.')
     pressBlue = false;
 }
@@ -144,7 +160,15 @@ greenCircle = () => {
     console.log('The green circle is moving.')
     pressGreen = true;
 }
+greenCircle2 = () => {
+    console.log('The second green circle is moving.')
+    pressGreen = true;
+}
 greenCircleEnded = () => {
+    console.log('There is no green circle.')
+    pressGreen = false;
+}
+greenCircle2Ended = () => {
     console.log('There is no green circle.')
     pressGreen = false;
 }
@@ -152,7 +176,15 @@ yellowCircle = () => {
     console.log('The yellow circle is moving.')
     pressYellow = true;
 }
+yellowCircle2 = () => {
+    console.log('The second yellow circle is moving.')
+    pressYellow = true;
+}
 yellowCircleEnded = () => {
+    console.log('There is no yellow circle.')
+    pressYellow = false;
+}
+yellowCircle2Ended = () => {
     console.log('There is no yellow circle.')
     pressYellow = false;
 }
@@ -163,60 +195,40 @@ red.addEventListener('animationstart', redCircle);
 red.addEventListener('animationiteration', redCircle);
 red.addEventListener('animationend', redCircleEnded);
 
-// let red2 = document.getElementById('knightsCircleRed');
-// red2.addEventListener('animationstart', redCircle);
-// red2.addEventListener('animationiteration', redCircle);
-// red2.addEventListener('animationend', redCircleEnded);
-
-// let red1 = document.getElementById('grooveCircleRed');
-// red1.addEventListener('animationstart', redCircle);
-// red1.addEventListener('animationiteration', redCircle);
-// red1.addEventListener('animationend', redCircleEnded);
+let red2 = document.getElementById('playCircleRed2');
+red2.addEventListener('animationstart', redCircle2);
+red2.addEventListener('animationiteration', redCircle2);
+red2.addEventListener('animationend', redCircle2Ended);
 
 let blue = document.getElementById('playCircleBlue');
 blue.addEventListener('animationstart', blueCircle);
 blue.addEventListener('animationiteration', blueCircle);
 blue.addEventListener('animationend', blueCircleEnded);
 
-// let blue1 = document.getElementsByClassName('grooveCircleBlue');
-// blue1.addEventListener('animationstart', blueCircle);
-// blue1.addEventListener('animationiteration', blueCircle);
-// blue1.addEventListener('animationend', blueCircleEnded);
-
-// let blue2 = document.getElementsByClassName('knightsCircleBlue');
-// blue2.addEventListener('animationstart', blueCircle);
-// blue2.addEventListener('animationiteration', blueCircle);
-// blue2.addEventListener('animationend', blueCircleEnded);
+let blue2 = document.getElementById('playCircleBlue2');
+blue2.addEventListener('animationstart', blueCircle2);
+blue2.addEventListener('animationiteration', blueCircle2);
+blue2.addEventListener('animationend', blueCircle2Ended);
 
 let green = document.getElementById('playCircleGreen');
 green.addEventListener('animationstart', greenCircle);
 green.addEventListener('animationiteration', greenCircle);
 green.addEventListener('animationend', greenCircleEnded);
 
-// let green1 = document.getElementsByClassName('grooveCircleGreen');
-// green1.addEventListener('animationstart', greenCircle);
-// green1.addEventListener('animationiteration', greenCircle);
-// green1.addEventListener('animationend', greenCircleEnded);
-
-// let green2 = document.getElementsByClassName('knightsCircleGreen');
-// green2.addEventListener('animationstart', greenCircle);
-// green2.addEventListener('animationiteration', greenCircle);
-// green2.addEventListener('animationend', greenCircleEnded);
+let green2 = document.getElementById('playCircleGreen2');
+green2.addEventListener('animationstart', greenCircle2);
+green2.addEventListener('animationiteration', greenCircle2);
+green2.addEventListener('animationend', greenCircle2Ended);
 
 let yellow = document.getElementById('playCircleYellow');
 yellow.addEventListener('animationstart', yellowCircle);
 yellow.addEventListener('animationiteration', yellowCircle);
 yellow.addEventListener('animationend', yellowCircleEnded);
 
-// let yellow1 = document.getElementsByClassName('grooveCircleYellow');
-// yellow1.addEventListener('animationstart', yellowCircle);
-// yellow1.addEventListener('animationiteration', yellowCircle);
-// yellow1.addEventListener('animationend', yellowCircleEnded);
-
-// let yellow2 = document.getElementsByClassName('knightsCircleYellow');
-// yellow2.addEventListener('animationstart', yellowCircle);
-// yellow2.addEventListener('animationiteration', yellowCircle);
-// yellow2.addEventListener('animationend', yellowCircleEnded);
+let yellow2 = document.getElementById('playCircleYellow2');
+yellow2.addEventListener('animationstart', yellowCircle2);
+yellow2.addEventListener('animationiteration', yellowCircle2);
+yellow2.addEventListener('animationend', yellowCircle2Ended);
 
 
 
