@@ -78,7 +78,7 @@ YELLOW:
     </div>
 
     <div id="loseModal">
-        <p id="loseModalText">You Lost! <br> <br> Your score: 200 <br> Computer score: 800 <br><br><br> <a href="song-select.html" id="loseBackToSongs" style="text-decoration: none;">BACK TO SONGS</a></p>
+        <p id="loseModalText">You Lost! <br> <br> Your score: 200 <br> Computer score: 800 <br><br><br> <a href="song-select.html" id="loseBackToSongs" style="text-decoration: none;" onclick="document.getElementById('loseModal').style.display = 'none'">BACK TO SONGS</a></p>
       </div>
 
 
@@ -89,6 +89,7 @@ YELLOW:
 
 
     <script src="app.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
     <!-- <script src="jquery-3.5.1.js"></script> -->
 </body>
 </html>
