@@ -523,6 +523,29 @@
             left: 650px;
         }
 
+        #winModal {
+            background-color: black;
+            border: white solid 2px;
+            box-shadow: #6000C1 4px 4px 6px;
+            height: 250px;
+            width: 400px;
+            align-items: center;
+            position: absolute;
+            left: 500px;
+            display: none;
+        }
+        #winModalText {
+            color: white;
+            font-family: 'Changa One';
+            font-size: 20pt;
+            text-align: center;
+        }
+        #wonBackToSongs {
+            font-family: 'Changa One';
+            font-size: 25pt;
+            color: #6000C1;
+        }
+
 
     /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */
 
