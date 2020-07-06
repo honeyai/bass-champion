@@ -15,6 +15,8 @@ console.log("Working")
 
 //---------------------------------------------------SONG SELECT FUNCTIONS/OBJECTS-----------------------------------------------------
 
+// The changeSongChoice function is unnecessary now because the play screen can't get information from the song selection screen. I'm leaving it in because I want to show my original thought process. 
+
 let songNumber = 0;
 // let songChoice = document.getElementById('previewTrack').src;
 // console.log(songChoice);
@@ -88,13 +90,14 @@ let songs = {
 
 // -----------------------------------------------------------PLAY SCREEN FUNCTIONS/OBJECTS---------------------------------------------------
 
-// Counters for player and computer accuracy and points
+// Counters for player and computer accuracy and points as well as the player's combo.
 let playerAccuracy = 100;
 let playerPoints = 0;
 let playerCombo = 0;
 let points = 0;
 let accuracy = 100;
 
+// This function randomly generates the computer's score that the player has to beat. The accuracy is no longer important but, again, you never know.
 computerPlay = () => {
     accuracy = (Math.random().toFixed(2))*100
     console.log(`Computer accuracy is ${accuracy}%.`);
@@ -104,7 +107,7 @@ computerPlay = () => {
 }
 computerPlay();
 
-// Desginating which note corresponds to which key
+// Desginating which note corresponds to which key. This is also unnecessary now.
 let redNoteKey = "h";
 let redNoteKey2 = "a";
 let blueNoteKey = "j";
@@ -118,7 +121,8 @@ let starPowerKey = " ";
 
 // ref for event listeners: https://www.w3schools.com/jsref/event_animationend.asp
 
-// These are the variables we'll use to test if the player pressed the note at the right time.
+
+// These are the variables I'll use to test if the player pressed the note at the right time.
 let pressRed = false;
 let pressBlue = false;
 let pressGreen = false;
@@ -196,6 +200,7 @@ yellowCircle2Ended = () => {
 //     musicPlaying = false;
 // }
 
+
 // These event listeners tell whether or not the timing circle is being shown at a given time or not.
 let red = document.getElementById('playCircleRed');
 red.addEventListener('animationstart', redCircle);
@@ -237,16 +242,21 @@ yellow2.addEventListener('animationstart', yellowCircle2);
 yellow2.addEventListener('animationiteration', yellowCircle2);
 yellow2.addEventListener('animationend', yellowCircle2Ended);
 
-// This checks if the song is still playing or not.
+// This checks if the song is still playing or not. I moved the onended to the playscreen to simplify and ensure that the win and lose modals would show.
+
 // let music = document.getElementById('playingSong');
 // music.addEventListener('ended', musicEnded);
 
+
+
+// This function returns any key that the player presses; I have an invisible input box that is autofocused on when the player chooses which song they want to play. This function reads the input in that text box.
 giveKeyCode = (event) => {
     let x = event.key;
     return x;
 }
 
 
+// This function takes the giveKeyCode function's return value (any key the player presses) and tests if it is equal to the correct key for whichever note is supposed to be pressed at that given time. It also uses the variables changed by the event listeners to tell if a certain note is supposed to be pressed at that time. In addition, it adds to the player points value and the player combo value.
 playerPlay = () => {
     let pressedKey = giveKeyCode(event);
     console.log(pressedKey)
@@ -300,6 +310,7 @@ playerPlay = () => {
     } 
 }
 
+// This function takes the computer's randomly generated score and the player's score and determines who won for that song and shows either the win or lose modal based on that.
 checkWinner = () => {
     if (points > playerPoints) {
         document.getElementById('loseModal').style.visibility = 'visible';
@@ -308,13 +319,9 @@ checkWinner = () => {
     }
 }
 
-computerPlay = () => {
-    let accuracy = Math.random()
-    console.log(accuracy);
-}
 
 
-// i dont think i need this anymore but you never know
+// i dont think i need this anymore but you never know.
 changeAnimation = () => {
     document.getElementById('playCircleRed').style.animation = 'timingCircleShrink .73s ease-in 40';
     document.getElementById('playCircleBlue').style.animation = 'timingCircleShrink 2s ease-in 40';
