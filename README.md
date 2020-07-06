@@ -3,7 +3,7 @@ This is my Mod 1 project, Bass Champion!
 
 Technologies Used: This game was made using mostly CSS and HTML with a bit of Javascript. I used keyframe animations for all of the green timing circles and positioned everything exactly where I wanted it to be with CSS. 
 
-Approach Taken: 
+Approach Taken: I worked from the CSS/visuals to the code, so basically from the outside to the inside. I did it this way because it seemed like the easiest way for me to eventually test my code and animation timing. I figure if the beats are off, at least it will look cool. From there, I looked for ways to repeat animations to make it simpler to time the notes with each song. I did not find a way to do this, so instead I decided to use mutliple timing circle images so that I could "edit" the timing of the beats for each note. 
 
 Installation Instructions: 
 
