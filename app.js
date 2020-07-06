@@ -92,11 +92,13 @@ let songs = {
 let playerAccuracy = 100;
 let playerPoints = 0;
 let playerCombo = 0;
+let points = 0;
+let accuracy = 100;
 
 computerPlay = () => {
-    let accuracy = (Math.random().toFixed(2))*100
+    accuracy = (Math.random().toFixed(2))*100
     console.log(`Computer accuracy is ${accuracy}%.`);
-    let points = Math.ceil(accuracy * 20);
+    points = Math.ceil(accuracy * 20);
     console.log(`Computer points is ${points}.`)
     document.getElementById('beatThis').innerHTML = (`SCORE TO BEAT: ${points}`)
 }
@@ -121,6 +123,7 @@ let pressRed = false;
 let pressBlue = false;
 let pressGreen = false;
 let pressYellow = false;
+let musicPlaying = true;
 
 
 // These change the variables above based on the animation state of the timing circles.
@@ -188,6 +191,10 @@ yellowCircle2Ended = () => {
     console.log('There is no yellow circle.')
     pressYellow = false;
 }
+musicEnded = () => {
+    console.log("Song is over.");
+    musicPlaying = false;
+}
 
 // These event listeners tell whether or not the timing circle is being shown at a given time or not.
 let red = document.getElementById('playCircleRed');
@@ -230,7 +237,9 @@ yellow2.addEventListener('animationstart', yellowCircle2);
 yellow2.addEventListener('animationiteration', yellowCircle2);
 yellow2.addEventListener('animationend', yellowCircle2Ended);
 
-
+// This checks if the song is still playing or not.
+let music = document.getElementById('playingSong');
+music.addEventListener('ended', musicEnded);
 
 giveKeyCode = (event) => {
     let x = event.key;
@@ -291,6 +300,13 @@ playerPlay = () => {
     } 
 }
 
+if (musicPlaying === false) {
+    if (points > playerPoints) {
+        document.getElementById('loseModal').style.visibility = visible;
+    } else if (playerPoints >= points) {
+        document.getElementById('winModal').style.visibility = visible;
+    }
+}
 
 
 computerPlay = () => {

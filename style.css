@@ -554,7 +554,7 @@ h2 {
   align-items: center;
   position: absolute;
   left: 500px;
-  display: none;
+  visibility: hidden;
 }
 #winModalText {
   color: white;
@@ -577,7 +577,7 @@ h2 {
   align-items: center;
   position: absolute;
   left: 500px;
-  display: none;
+  visibility: hidden;
 }
 #loseModalText {
   color: white;
