@@ -139,11 +139,19 @@ redCircle2 = () => {
     console.log('The second red circle is moving.')
     pressRed = true;
 }
+redCircle3 = () => {
+    console.log('The second red circle is moving.')
+    pressRed = true;
+}
 redCircleEnded = () => {
     console.log('There is no red circle.')
     pressRed = false;
 }
 redCircle2Ended = () => {
+    console.log('There is no red circle.')
+    pressRed = false;
+}
+redCircle3Ended = () => {
     console.log('There is no red circle.')
     pressRed = false;
 }
@@ -155,11 +163,19 @@ blueCircle2 = () => {
     console.log('The second blue circle is moving.')
     pressBlue = true;
 }
+blueCircle3 = () => {
+    console.log('The second blue circle is moving.')
+    pressBlue = true;
+}
 blueCircleEnded = () => {
     console.log('There is no blue circle.')
     pressBlue = false;
 }
 blueCircle2Ended = () => {
+    console.log('There is no blue circle.')
+    pressBlue = false;
+}
+blueCircle3Ended = () => {
     console.log('There is no blue circle.')
     pressBlue = false;
 }
@@ -171,11 +187,19 @@ greenCircle2 = () => {
     console.log('The second green circle is moving.')
     pressGreen = true;
 }
+greenCircle3 = () => {
+    console.log('The second green circle is moving.')
+    pressGreen = true;
+}
 greenCircleEnded = () => {
     console.log('There is no green circle.')
     pressGreen = false;
 }
 greenCircle2Ended = () => {
+    console.log('There is no green circle.')
+    pressGreen = false;
+}
+greenCircle3Ended = () => {
     console.log('There is no green circle.')
     pressGreen = false;
 }
@@ -187,11 +211,19 @@ yellowCircle2 = () => {
     console.log('The second yellow circle is moving.')
     pressYellow = true;
 }
+yellowCircle3 = () => {
+    console.log('The second yellow circle is moving.')
+    pressYellow = true;
+}
 yellowCircleEnded = () => {
     console.log('There is no yellow circle.')
     pressYellow = false;
 }
 yellowCircle2Ended = () => {
+    console.log('There is no yellow circle.')
+    pressYellow = false;
+}
+yellowCircle3Ended = () => {
     console.log('There is no yellow circle.')
     pressYellow = false;
 }
@@ -212,6 +244,11 @@ red2.addEventListener('animationstart', redCircle2);
 red2.addEventListener('animationiteration', redCircle2);
 red2.addEventListener('animationend', redCircle2Ended);
 
+let red3 = document.getElementById('playCircleRed3');
+red3.addEventListener('animationstart', redCircle3);
+red3.addEventListener('animationiteration', redCircle3);
+red3.addEventListener('animationend', redCircle3Ended);
+
 let blue = document.getElementById('playCircleBlue');
 blue.addEventListener('animationstart', blueCircle);
 blue.addEventListener('animationiteration', blueCircle);
@@ -221,6 +258,11 @@ let blue2 = document.getElementById('playCircleBlue2');
 blue2.addEventListener('animationstart', blueCircle2);
 blue2.addEventListener('animationiteration', blueCircle2);
 blue2.addEventListener('animationend', blueCircle2Ended);
+
+let blue3 = document.getElementById('playCircleBlue3');
+blue3.addEventListener('animationstart', blueCircle3);
+blue3.addEventListener('animationiteration', blueCircle3);
+blue3.addEventListener('animationend', blueCircle3Ended);
 
 let green = document.getElementById('playCircleGreen');
 green.addEventListener('animationstart', greenCircle);
@@ -232,6 +274,11 @@ green2.addEventListener('animationstart', greenCircle2);
 green2.addEventListener('animationiteration', greenCircle2);
 green2.addEventListener('animationend', greenCircle2Ended);
 
+let green3 = document.getElementById('playCircleGreen3');
+green3.addEventListener('animationstart', greenCircle3);
+green3.addEventListener('animationiteration', greenCircle3);
+green3.addEventListener('animationend', greenCircle3Ended);
+
 let yellow = document.getElementById('playCircleYellow');
 yellow.addEventListener('animationstart', yellowCircle);
 yellow.addEventListener('animationiteration', yellowCircle);
@@ -241,6 +288,11 @@ let yellow2 = document.getElementById('playCircleYellow2');
 yellow2.addEventListener('animationstart', yellowCircle2);
 yellow2.addEventListener('animationiteration', yellowCircle2);
 yellow2.addEventListener('animationend', yellowCircle2Ended);
+
+let yellow3 = document.getElementById('playCircleYellow3');
+yellow3.addEventListener('animationstart', yellowCircle3);
+yellow3.addEventListener('animationiteration', yellowCircle3);
+yellow3.addEventListener('animationend', yellowCircle3Ended);
 
 // This checks if the song is still playing or not. I moved the onended to the playscreen to simplify and ensure that the win and lose modals would show.
 
