@@ -264,49 +264,49 @@ playerPlay = () => {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
     } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     }
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
     } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
         console.log('Missed!');
         document.getElementById('miss').style.animation = "missed .98s ease-out 1"
         playerCombo = 0;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
     if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
     } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .99s ease-out 1"
         playerCombo = 0;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
     if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
     } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed 1s ease-out 1"
         playerCombo = 0;
-        document.getElementById('playerAcc').innerHTML = (`COM: ${playerCombo}`);
+        document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
 }
 
