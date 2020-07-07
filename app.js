@@ -307,17 +307,6 @@ giveKeyCode = (event) => {
     return x;
 }
 
-let isKeyDown = false;
-yesKeyDown = () => {
-    isKeyDown = true;
-}
-noKeyDown = () => {
-    isKeyDown = false;
-}
-
-document.addEventListener('keydown', yesKeyDown);
-document.addEventListener('keyup', noKeyDown);
-
 
 // This function takes the giveKeyCode function's return value (any key the player presses) and tests if it is equal to the correct key for whichever note is supposed to be pressed at that given time. It also uses the variables changed by the event listeners to tell if a certain note is supposed to be pressed at that time. In addition, it adds to the player points value and the player combo value.
 playerPlay = () => {
@@ -329,7 +318,7 @@ playerPlay = () => {
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressRed && ((pressedKey !== 'a' && pressedKey !== 'h') || (pressRed && isKeyDown === false))) {
+    } else if (pressRed && (pressedKey !== 'a' && pressedKey !== 'h')) {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
@@ -341,7 +330,7 @@ playerPlay = () => {
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressBlue && ((pressedKey !== 's' && pressedKey !== 'j') || (pressBlue && isKeyDown === false))) {
+    } else if (pressBlue && (pressedKey !== 's' && pressedKey !== 'j')) {
         console.log('Missed!');
         document.getElementById('miss').style.animation = "missed .98s ease-out 1"
         playerCombo = 0;
@@ -353,9 +342,9 @@ playerPlay = () => {
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if ((pressGreen && pressedKey !== 'd' && pressedKey !== 'k') || (pressGreen && isKeyDown === false)) {
-        console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed .99s ease-out 1"
+    } else if (pressGreen && (pressedKey !== 'd' && pressedKey !== 'k')) {
+        console.log('Missed!');
+        // document.getElementById('miss').style.animation = "missed .99s ease-out 1"
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
@@ -365,7 +354,7 @@ playerPlay = () => {
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if ((pressYellow && pressedKey !== 'f' && pressedKey !== 'l') || (pressYellow && isKeyDown === false)) {
+    } else if (pressYellow && (pressedKey !== 'f' && pressedKey !== 'l')) {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed 1s ease-out 1"
         playerCombo = 0;
