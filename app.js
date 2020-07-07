@@ -313,6 +313,7 @@ playerPlay = () => {
     let pressedKey = giveKeyCode(event);
     console.log(pressedKey)
     if ((pressRed && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressBlue && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressGreen && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressYellow && (pressedKey === 'a' || pressedKey === 'h'))) {
+        document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
@@ -320,11 +321,12 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressRed && (pressedKey !== 'a' && pressedKey !== 'h')) {
         console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed .97s ease-out 1"
+        document.getElementById('miss').style.visibility = 'visible';
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     }
     if (pressBlue && (pressedKey === 's' || pressedKey === 'j') || (pressBlue && pressGreen && (pressedKey === 's' || pressedKey === 'j')) || (pressBlue && pressYellow && (pressedKey === 's' || pressedKey === 'j'))) {
+        document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
@@ -332,11 +334,12 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressBlue && (pressedKey !== 's' && pressedKey !== 'j')) {
         console.log('Missed!');
-        document.getElementById('miss').style.animation = "missed .98s ease-out 1"
+        document.getElementById('miss').style.visibility = 'visible';
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
     if (pressGreen && (pressedKey === 'd' || pressedKey === 'k') || (pressGreen && pressYellow &&(pressedKey === 'd' || pressedKey === 'k'))) {
+        document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
@@ -344,11 +347,12 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressGreen && (pressedKey !== 'd' && pressedKey !== 'k')) {
         console.log('Missed!');
-        // document.getElementById('miss').style.animation = "missed .99s ease-out 1"
+        document.getElementById('miss').style.visibility = 'visible';
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
     if (pressYellow && (pressedKey === 'f' || pressedKey === 'l')) {
+        document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
@@ -356,7 +360,7 @@ playerPlay = () => {
         console.log(playerPoints);
     } else if (pressYellow && (pressedKey !== 'f' && pressedKey !== 'l')) {
         console.log('Missed!')
-        document.getElementById('miss').style.animation = "missed 1s ease-out 1"
+        document.getElementById('miss').style.visibility = 'visible';
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
