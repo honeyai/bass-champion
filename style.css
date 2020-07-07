@@ -87,7 +87,7 @@
 
 .controlPics {
   display: inline-flex;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 }
 
 #leftHanded {
@@ -97,6 +97,16 @@
 #rightHanded {
   padding-left: 530px;
 }
+/* #blockers {
+  border: black solid;
+  color: black;
+  height: 150px;
+  position: absolute;
+  top: 420px;
+  width: 100vw;
+  opacity: 100;
+  fill: black;
+} */
 
 .backToMenu {
   font-family: "Changa One";
