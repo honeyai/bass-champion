@@ -572,10 +572,18 @@ h2 {
   font-size: 20pt;
   text-align: center;
 }
+#winText {
+  color: white;
+  font-family: "Changa One";
+  font-size: 20pt;
+  text-align: center;
+}
 #wonBackToSongs {
   font-family: "Changa One";
   font-size: 25pt;
   color: #6000c1;
+  position: relative;
+  left: 115px;
 }
 
 #loseModal {
@@ -595,10 +603,18 @@ h2 {
   font-size: 20pt;
   text-align: center;
 }
+#loseText {
+  color: white;
+  font-family: "Changa One";
+  font-size: 20pt;
+  text-align: center;
+}
 #loseBackToSongs {
   font-family: "Changa One";
   font-size: 25pt;
   color: #6000c1;
+  position: relative;
+  left: 115px;
 }
 
 /* --------------------------ANIMATIONS/KEYFRAMES-------------------------- */

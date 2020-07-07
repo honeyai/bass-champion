@@ -307,42 +307,53 @@ giveKeyCode = (event) => {
     return x;
 }
 
+let isKeyDown = false;
+yesKeyDown = () => {
+    isKeyDown = true;
+}
+noKeyDown = () => {
+    isKeyDown = false;
+}
+
+document.addEventListener('keydown', yesKeyDown);
+document.addEventListener('keyup', noKeyDown);
+
 
 // This function takes the giveKeyCode function's return value (any key the player presses) and tests if it is equal to the correct key for whichever note is supposed to be pressed at that given time. It also uses the variables changed by the event listeners to tell if a certain note is supposed to be pressed at that time. In addition, it adds to the player points value and the player combo value.
 playerPlay = () => {
     let pressedKey = giveKeyCode(event);
     console.log(pressedKey)
-    if (pressRed && (pressedKey === 'a' || pressedKey === 'h')) {
+    if ((pressRed && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressBlue && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressGreen && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressYellow && (pressedKey === 'a' || pressedKey === 'h'))) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressRed && pressedKey !== 'a' && pressedKey !== 'h') {
+    } else if (pressRed && ((pressedKey !== 'a' && pressedKey !== 'h') || (pressRed && isKeyDown === false))) {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .97s ease-out 1"
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     }
-    if (pressBlue && (pressedKey === 's' || pressedKey === 'j')) {
+    if (pressBlue && (pressedKey === 's' || pressedKey === 'j') || (pressBlue && pressGreen && (pressedKey === 's' || pressedKey === 'j')) || (pressBlue && pressYellow && (pressedKey === 's' || pressedKey === 'j'))) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressBlue && pressedKey !== 's' && pressedKey !== 'j') {
+    } else if (pressBlue && ((pressedKey !== 's' && pressedKey !== 'j') || (pressBlue && isKeyDown === false))) {
         console.log('Missed!');
         document.getElementById('miss').style.animation = "missed .98s ease-out 1"
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
-    if (pressGreen && (pressedKey === 'd' || pressedKey === 'k')) {
+    if (pressGreen && (pressedKey === 'd' || pressedKey === 'k') || (pressGreen && pressYellow &&(pressedKey === 'd' || pressedKey === 'k'))) {
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressGreen && pressedKey !== 'd' && pressedKey !== 'k') {
+    } else if ((pressGreen && pressedKey !== 'd' && pressedKey !== 'k') || (pressGreen && isKeyDown === false)) {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed .99s ease-out 1"
         playerCombo = 0;
@@ -354,7 +365,7 @@ playerPlay = () => {
         playerCombo++;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
         console.log(playerPoints);
-    } else if (pressYellow && pressedKey !== 'f' && pressedKey !== 'l') {
+    } else if ((pressYellow && pressedKey !== 'f' && pressedKey !== 'l') || (pressYellow && isKeyDown === false)) {
         console.log('Missed!')
         document.getElementById('miss').style.animation = "missed 1s ease-out 1"
         playerCombo = 0;
@@ -366,8 +377,10 @@ playerPlay = () => {
 checkWinner = () => {
     if (points > playerPoints) {
         document.getElementById('loseModal').style.visibility = 'visible';
+        document.getElementById('loseText').innerHTML = `You Lost! <br/> <br/> Your score: ${playerPoints} <br/> Computer score: ${points}`;
     } else if (playerPoints >= points) {
         document.getElementById('winModal').style.visibility = 'visible';
+        document.getElementById('winText').innerHTML = `You Won! <br/> <br/> Your score:    ${playerPoints} <br/> Computer score:    ${points}`;
     }
 }
 
