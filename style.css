@@ -319,32 +319,28 @@
   font-family: "Changa One";
 }
 #previewTitle {
-  font-size: 45pt;
+  font-size: 40pt;
   color: white;
-  position: absolute;
-  top: 470px;
-  left: 965px;
+  text-align: center;
+  padding-top: 50px;
 }
 #previewArtist {
   font-size: 20pt;
   color: #6000c1;
-  position: absolute;
-  top: 550px;
-  left: 1010px;
+  text-align: center;
+  padding-top: 10px;
 }
 #previewAlbum {
   font-size: 20pt;
   color: #6000c1;
-  position: absolute;
-  top: 590px;
-  left: 975px;
+  text-align: center;
+  padding-top: 10px;
 }
 #previewDifficulty {
   font-size: 20pt;
   color: #6000c1;
-  position: absolute;
-  top: 630px;
-  left: 990px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 button {
