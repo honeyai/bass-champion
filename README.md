@@ -7,7 +7,7 @@ Approach Taken: I worked from the CSS/visuals to the code, so basically from the
 
 Installation Instructions: 
 Clone down this repo and open index.html in a live server.
-(If you want it to look good, download this font: https://fonts.google.com/specimen/Changa+One )
 Link: https://github.com/toristuff97/bass-champion
+(If you want it to look good, download this font: https://fonts.google.com/specimen/Changa+One)
 
 Unsolved Problems: I originally wanted to have the player choose the song they wanted to play on the Song Selection screen, but I remembered that HTML pages can't exchange information with one another, so the song selection screen is pretty much just for previews of the songs and aesthetics now. I was also having a tough time trying to think of an efficient way for the game to register two correct key presses that occur at the same time, but I realized I did't have enough time to implement and test a method for that; instead I just have the note timings always at least slightly out of sync with one another.
