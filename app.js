@@ -312,7 +312,10 @@ giveKeyCode = (event) => {
 playerPlay = () => {
     let pressedKey = giveKeyCode(event);
     console.log(pressedKey)
-    if ((pressRed && (pressedKey === 'a' || pressedKey === 'h')) || (pressRed && pressBlue && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'j' || pressedKey === 's')) || (pressRed && pressGreen && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'k' || pressedKey === 'd')) || (pressRed && pressYellow && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'l' || pressedKey === 'f'))) {
+    if ((pressRed && (pressedKey === 'a' || pressedKey === 'h')) || 
+    (pressRed && pressBlue && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'j' || pressedKey === 's')) || 
+    (pressRed && pressGreen && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'k' || pressedKey === 'd')) || 
+    (pressRed && pressYellow && (pressedKey === 'a' || pressedKey === 'h' || pressedKey === 'l' || pressedKey === 'f'))) {
         document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
@@ -325,7 +328,10 @@ playerPlay = () => {
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     }
-    if (pressBlue && (pressedKey === 's' || pressedKey === 'j') || (pressBlue && pressGreen && (pressedKey === 's' || pressedKey === 'j' || pressedKey === 'k' || pressedKey === 'd')) || (pressBlue && pressYellow && (pressedKey === 's' || pressedKey === 'j' || pressedKey === 'l' || pressedKey === 'f')) || (pressBlue && pressRed && (pressedKey === 's' || pressedKey === 'a' || pressedKey === 'k' || pressedKey === 'h'))) {
+    if (pressBlue && (pressedKey === 's' || pressedKey === 'j') || 
+    (pressBlue && pressGreen && (pressedKey === 's' || pressedKey === 'j' || pressedKey === 'k' || pressedKey === 'd')) || 
+    (pressBlue && pressYellow && (pressedKey === 's' || pressedKey === 'j' || pressedKey === 'l' || pressedKey === 'f')) || 
+    (pressBlue && pressRed && (pressedKey === 's' || pressedKey === 'a' || pressedKey === 'k' || pressedKey === 'h'))) {
         document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
@@ -338,7 +344,10 @@ playerPlay = () => {
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
-    if (pressGreen && (pressedKey === 'd' || pressedKey === 'k') || (pressGreen && pressYellow &&(pressedKey === 'd' || pressedKey === 'k' || pressedKey === 'f' || pressedKey === 'l')) || (pressGreen && pressBlue &&(pressedKey === 'd' || pressedKey === 's' || pressedKey === 'f' || pressedKey === 'j')) || (pressGreen && pressRed &&(pressedKey === 'd' || pressedKey === 'a' || pressedKey === 'f' || pressedKey === 'h'))) {
+    if (pressGreen && (pressedKey === 'd' || pressedKey === 'k') || 
+    (pressGreen && pressYellow &&(pressedKey === 'd' || pressedKey === 'k' || pressedKey === 'f' || pressedKey === 'l')) || 
+    (pressGreen && pressBlue &&(pressedKey === 'd' || pressedKey === 's' || pressedKey === 'f' || pressedKey === 'j')) || 
+    (pressGreen && pressRed &&(pressedKey === 'd' || pressedKey === 'a' || pressedKey === 'f' || pressedKey === 'h'))) {
         document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
@@ -351,7 +360,10 @@ playerPlay = () => {
         playerCombo = 0;
         document.getElementById('playerAcc').innerHTML = (`${playerCombo}x`);
     } 
-    if (pressYellow && (pressedKey === 'f' || pressedKey === 'l') || (pressYellow && pressGreen && (pressedKey === 'f' || pressedKey === 'd' || pressedKey === 'l' || pressedKey === 'k')) || (pressYellow && pressBlue && (pressedKey === 'f' || pressedKey === 's' || pressedKey === 'l' || pressedKey === 'j')) || (pressYellow && pressRed && (pressedKey === 'f' || pressedKey === 'a' || pressedKey === 'l' || pressedKey === 'h'))) {
+    if (pressYellow && (pressedKey === 'f' || pressedKey === 'l') || 
+    (pressYellow && pressGreen && (pressedKey === 'f' || pressedKey === 'd' || pressedKey === 'l' || pressedKey === 'k')) || 
+    (pressYellow && pressBlue && (pressedKey === 'f' || pressedKey === 's' || pressedKey === 'l' || pressedKey === 'j')) || 
+    (pressYellow && pressRed && (pressedKey === 'f' || pressedKey === 'a' || pressedKey === 'l' || pressedKey === 'h'))) {
         document.getElementById('miss').style.visibility = 'hidden';
         playerPoints += 20;
         document.getElementById('playerPts').innerHTML = playerPoints;
